@@ -51,29 +51,49 @@
       
       <div id="page--content" class="row">
         
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <h2>What you will need for your application</h2>
-              <p>To submit your application you will have to provide the following information. If you don’t have it to hand you can still fill in parts of the application, save it and complete it at a later date when you have collected everything you need.</p>
-              <ul>
-                <li>Marketing strategy document</li>
-                <li>Business number and company information</li>
-                <li>Background information about your project</li>
-                <li>Quotes from external contrators or suppliers</li>
-                <li>Authority to apply for funding</li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-sm-3">
+          <p>If you are new to Scottish Enterprise and dont have an online account with us you will have to to provide us with details to allow us to save and process your application.</p> 
+  
+          <p>If you already have an account you should sign in before starting a new application</p>
         </div>
 
-        <div class="col-sm-6">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <p>If you have collected all the information that is required for this application as detailed on this page your application should take around 30 minutes.</p>
-              <a href="application-new-account.html" class="btn btn-primary">Start a new application</a>
+        <div class="col-sm-9">
+          <form>
+
+            <div class="form-group">
+              <label for="newAccountFName">Your first name</label>
+              <input type="email" class="form-control" id="newAccountFName" aria-describedby="emailHelp" placeholder="Enter your first name">
             </div>
-          </div>
+
+            <div class="form-group">
+              <label for="newAccountLName">Your last name</label>
+              <input type="email" class="form-control" id="newAccountLName" aria-describedby="emailHelp" placeholder="Enter your last name" />
+            </div>
+
+            <div class="form-group">
+              <label for="newAccountEmail">Email address</label>
+              <input type="email" class="form-control" id="newAccountEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            
+            <div class="form-group">
+              <label for="newAccountPassword">Enter a password</label>
+              <input type="password" class="form-control" id="newAccountPassword" aria-describedby="emailHelp" placeholder="Enter a password" />
+            </div>
+
+            <div class="form-group">
+              <label for="newAccountPassword">Confirm password</label>
+              <input type="password" class="form-control" id="newAccountPassword" aria-describedby="emailHelp" placeholder="Enter a password" />
+            </div>
+
+            <div class="form-actions">
+              <input type="button"  class="btn btn-primary pull-right" onClick="location.href='application-your-details.html'" value="Register" />
+            </div>
+
+
+            
+          </form>
+          
         </div>
       
       

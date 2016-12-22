@@ -1,0 +1,28 @@
+ol#progress--indicator {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+}
+ol#progress--indicator li {
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+ol#progress--indicator li span.light {
+  height: 1em;
+  width: 1em;
+  background: grey;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.125em;
+}
+ol#progress--indicator li.current--step span.light {
+  background: black;
+}
+ol#progress--indicator li.complete span.light {
+  background: green;
+}
+ol#progress--indicator li.incomplete span.light {
+  background: orange;
+}
