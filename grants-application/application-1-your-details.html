@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Inward by scotent</title>
+    <title>Contracts & Grants by Scotent</title>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -54,50 +54,66 @@
         <div class="col-sm-3">
           
           <ol id="progress--indicator">
-            <li class="complete"><a href=""><span class="light"></span>Your details</a></li>
-            <li class="incomplete"><a href=""><span class="light"></span>Business details</a></li>
-            <li class="complete"><a href=""><span class="light"></span>Project details</a></li>
-            <li class="current--step"><a href=""><span class="light"></span>Project outputs</a></li>
-            <li class=""><a href=""><span class="light"></span>External Consultants</a></li>
-            <li class=""><a href=""><span class="light"></span>Deliverables</a></li>
+            <li class="current--step"><a href="application-1-your-details.html"><span class="light"></span>Your details</a></li>
+            <li class=""><a href="application-2-business-details.html"><span class="light"></span>Business details</a></li>
+            <li class=""><a href="application-3-project-details.html"><span class="light"></span>Project details</a></li>
+            <li class=""><a href="application-4-project-outputs.html"><span class="light"></span>Project outputs</a></li>
+            <li class=""><a href="application-5-external-consultants.html"><span class="light"></span>External Consultants</a></li>
+            <li class=""><a href="application-6-deliverables.html"><span class="light"></span>Deliverables</a></li>
             <li class=""><span class="light"></span>Preview</li>            
           </ol>
-          
+
         </div>
 
         <div class="col-sm-9">
           <form>
 
-            <div class="form-group">
-              <label for="applicationFName">Your first name</label>
-              <input type="email" class="form-control" id="applicationFName" aria-describedby="emailHelp" placeholder="Enter your first name">
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="applicationFName">Your first name</label>
+                <input type="email" class="form-control" id="applicationFName" aria-describedby="emailHelp" placeholder="Enter your first name">
+              </div>
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="applicationLName">Your last name</label>
-              <input type="email" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your last name">
+
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="applicationLName">Your last name</label>
+                <input type="text" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your last name">
+              </div>
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </div>
             </div>
 
-            <div class="form-group">
-              <label for="applicationEmail">Email address</label>
-              <input type="email" class="form-control" id="applicationEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="applicationEmail">Email address</label>
+                <input type="email" class="form-control" id="applicationEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="col-sm-6 help--text">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group row">
+              <div class="col-sm-6">
               <label for="applicationLName">Your contact telephone number</label>
               <input type="tel" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your contact telephone number">
+              </div>
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </div>
             </div>
 
             <div class="form--actions">
-              <div class="col-sm-4 text-center">
-                <label for="saveApplicationBack">Previous Step: <span>Your details</span></label>
-                <input id="saveApplicationBack" type="button" class="btn btn-primary form-control" onClick="location.href='application-your-details.html'" value="Save and go back" />
-              </div>
 
-              <div class="col-sm-4 col-sm-offset-4 text-center">
-                <label for="saveApplicationCont">Next Step: <span>Project details</span></label>
-                <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-project-details.html'" value="Save and continue" />
+              <div class="col-sm-4 col-sm-offset-8 text-center">
+                <label for="saveApplicationCont">Next Step: <span>Your details</span></label>
+                <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-2-business-details.html'" value="Save and continue" />
               </div>
             </div>
 
