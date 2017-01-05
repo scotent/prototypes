@@ -68,26 +68,70 @@
         <div class="col-sm-9">
           <form>
 
-            <div class="form-group">
-              <label for="applicationFName">Your first name</label>
-              <input type="email" class="form-control" id="applicationFName" aria-describedby="emailHelp" placeholder="Enter your first name">
+            <legend>Key activities/phases of the project</legend>
+            
+            <div class="row">
+              <div class="col-sm-7">
+
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Activity 1 <span class="caret"></span></a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <div class="form-group">
+                          <label for="noEmployees">Activity</label>
+                          <input id="noEmployees" type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="noEmployees">Who is responsible</label>
+                          <input id="noEmployees" type="text" class="form-control">
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-sm-6">
+                            <label for="noEmployees">Starts (MM/YY)</label>
+                            <input id="noEmployees" type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="noEmployees">Ends (MM/YY)</label>
+                            <input id="noEmployees" type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="applicationLName">Output</label>
+                          <textarea id="projectDesc" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-sm-6">
+                            <label for="noEmployees">£ Internal</label>
+                            <input id="noEmployees" type="text" class="form-control">
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="noEmployees">£ External</label>
+                            <input id="noEmployees" type="text" class="form-control">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="applicationLName">Claim date</label>
+                          <textarea id="projectDesc" class="form-control" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activity--actions">
+                    <button class="btn btn-default pull-right" id="addActivity">Add another activity</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-5 help--text">
+                Summarise the various activities and/or phases within the project, including who will carry out the work (i.e. internal business costs, external consultant etc.), how much each activity and/or phase will cost, and when it is due to start and complete. Ensure that all costs are noted against the relevant output, where there is more than one output. Append any specific information, such as project plans or proposals from suppliers or contractors involved in the project’s delivery. If required, append a further breakdown of costs to this application. NOTE: external costs are all costs a company will be billed for from a 3rd party. The Activity end dates will generate an assumed claim date accounting for timescales to pay 3rd parties 
+              </div>
+            
             </div>
 
-            <div class="form-group">
-              <label for="applicationLName">Your last name</label>
-              <input type="email" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your last name">
-            </div>
-
-            <div class="form-group">
-              <label for="applicationEmail">Email address</label>
-              <input type="email" class="form-control" id="applicationEmail" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="applicationLName">Your contact telephone number</label>
-              <input type="tel" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your contact telephone number">
-            </div>
 
             <div class="form--actions">
               <div class="col-sm-4 text-center">

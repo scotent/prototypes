@@ -68,27 +68,64 @@
         <div class="col-sm-9">
           <form>
 
-            <div class="form-group">
-              <label for="applicationFName">Your first name</label>
-              <input type="email" class="form-control" id="applicationFName" aria-describedby="emailHelp" placeholder="Enter your first name">
+            <div class="form-group row">
+              <div class="col-sm-6">
+                
+                <label for="applicationFName">Are you using one or more external consultant to deliver the project details in this application?</label>
+                <div>
+                  <label class="radio-inline"><input type="radio" name="externalConsultants" checked>No</label>
+                  <label class="radio-inline"><input type="radio" name="externalConsultants">Yes</label>
+                </div>
+  
+                <div class="form-sub-group">
+                  <label for="applicationLName">If yes, please explain</label>
+                    <textarea id="projectDesc" class="form-control" rows="3"></textarea>
+                </div>
+
+              </div>
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </div>
+
             </div>
 
-            <div class="form-group">
-              <label for="applicationLName">Your last name</label>
-              <input type="email" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your last name">
+            <div class="form-group row">
+              <div class="col-sm-6">
+              <label for="applicationFName">Have competitive quotes been obtained?</label>
+              <div>
+                <label class="radio-inline"><input type="radio" name="quotesObtained" checked>No</label>
+                <label class="radio-inline"><input type="radio" name="quotesObtained">Yes</label>
+              </div>
+              
+              <input type="file" name="fileupload" value="fileupload" id="fileupload">
+
+              </div>
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </div>
+
+            </div>
+            
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="applicationFName">Is there any declared interest from either party?</label>
+                <div>
+                  <label class="radio-inline"><input type="radio" name="declaredInterest" checked>No</label>
+                  <label class="radio-inline"><input type="radio" name="declaredInterest">Yes</label>
+                </div>
+
+                <div class="form-sub-group">
+                  <label for="applicationLName">If yes, please explain</label>
+                  <textarea id="projectDesc" class="form-control" rows="3"></textarea>
+                </div>
+
+              </div>
+                <div class="col-sm-6 help--text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                </div>
             </div>
 
-            <div class="form-group">
-              <label for="applicationEmail">Email address</label>
-              <input type="email" class="form-control" id="applicationEmail" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-
-            <div class="form-group">
-              <label for="applicationLName">Your contact telephone number</label>
-              <input type="tel" class="form-control" id="applicationLName" aria-describedby="emailHelp" placeholder="Enter your contact telephone number">
-            </div>
-
+            
             <div class="form--actions">
               <div class="col-sm-4 text-center">
                 <label for="saveApplicationBack">Previous Step: <span>Project outputs</span></label>
