@@ -70,62 +70,65 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="noEmployees">What type of activity are you looking for support with?</label>
+                <fieldset>
+                <legend>What type of activity are you looking for support with?</legend>
 
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityMarketResearch">
+                    <input id="activityMarketResearch" type="checkbox" value="">
                     Market Research
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityExhibitionParticipation">
+                    <input id="activityExhibitionParticipation" type="checkbox" value="">
                     Exhibition participation
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityNewSpecialists">
+                    <input id="activityNewSpecialists" type="checkbox" value="">
                     Recruitment of new specialists skills into the business
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityMarketEntryPlan">
+                    <input id="activityMarketEntryPlan" type="checkbox" value="">
                     Development of detailed UK market entry plan
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityNewSales">
+                    <input id="activityNewSales" type="checkbox" value="">
                     Development of new Sales processes
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityPR">
+                    <input id="activityPR" type="checkbox" value="">
                     PR design and planning 
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityBranding">
+                    <input id="activityBranding" type="checkbox" value="">
                     New branding
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityNewSectorsGeog">
+                    <input id="activityNewSectorsGeog" type="checkbox" value="">
                     Entry into new sectors / geographies
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="activityOther">
+                    <input id="activityOther" type="checkbox" value="">
                     Other (Please describe in box)
+                    <textarea id="activityOtherDesc" class="form-control hidden" rows="3"></textarea>
                   </label>
                 </div>
+                </fieldset>
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -154,32 +157,34 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="noEmployees">Why is Scottish Enterprise support required?</label>
-
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    it will enable the project to happen sooner
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    it will increase the scale of the project
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    it will improve the quality of the project
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
-                    it will enable the project to happen at all
-                  </label>
-                </div>
+                <fieldset>
+                  <legend>Why is Scottish Enterprise support required?</legend>
+  
+                  <div class="checkbox">
+                    <label for="reasonSooner">
+                      <input id="reasonSooner" type="checkbox" value="">
+                      it will enable the project to happen sooner
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="reasonScale">
+                      <input id="reasonScale" type="checkbox" value="">
+                      it will increase the scale of the project
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="reasonQuality">
+                      <input id="reasonQuality" type="checkbox" value="">
+                      it will improve the quality of the project
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="reasonHappen">
+                      <input id="reasonHappen" type="checkbox" value="">
+                      it will enable the project to happen at all
+                    </label>
+                  </div>
+                </fieldset>
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -188,8 +193,8 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="noEmployees">How much financial support is required from Scottish Enterprise to enable the project to proceed?</label>
-                <input type="number" class="form-control" id="noEmployees" aria-describedby="noEmployeesHelp" placeholder="">
+                <label for="financialSupport">How much financial support is required from Scottish Enterprise to enable the project to proceed?</label>
+                <input type="number" class="form-control" id="financialSupport" aria-describedby="noEmployeesHelp" placeholder="">
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -198,12 +203,12 @@
 
 
             <div class="form--actions">
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-5 text-center">
                 <label for="saveApplicationBack">Previous Step: <span>Business details</span></label>
                 <input id="saveApplicationBack" type="button" class="btn btn-primary form-control" onClick="location.href='application-2-business-details.html'" value="Save and go back" />
               </div>
 
-              <div class="col-sm-4 col-sm-offset-4 text-center">
+              <div class="col-sm-5 col-sm-offset-2 text-center">
                 <label for="saveApplicationCont">Next Step: <span>Project outputs</span></label>
                 <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-4-project-outputs.html'" value="Save and continue" />
               </div>

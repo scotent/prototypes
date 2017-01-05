@@ -90,17 +90,18 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="companyType">Is the company an SME or a large enterprise?</label>
-                 <div id="companyType">
-                    <label class="radio-inline">
-                      <input type="radio" name="companyTypeOptions" id="companyTypeSME" value="SME"> SME
-                    </label>
-                    
-                    <label class="radio-inline">
-                      <input type="radio" name="companyTypeOptions" id="companyTypeEnterprise" value="Enterprise"> Enterprise
-                    </label>
-                 </div>
+                <fieldset>
+                  <legend>Is the company an SME or a large enterprise?</legend>
+                  <label class="radio-inline">
+                    <input type="radio" name="companyTypeOptions" id="companyTypeSME" value="SME"> SME
+                  </label>
+                  
+                  <label class="radio-inline">
+                    <input type="radio" name="companyTypeOptions" id="companyTypeEnterprise" value="Enterprise"> Enterprise
+                  </label>
+                  </fieldset>
               </div>
+                  
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               </div>
@@ -108,11 +109,21 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="exampleInputAmount">Company turnover</label>
+                <label for="companyTurnover">Company turnover</label>
+
                 <div class="input-group">
-                  <div class="input-group-addon">£</div>
-                  <input type="number" class="form-control" id="exampleInputAmount" placeholder="Amount">
-                </div>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">£ GBP <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">£ GBP</a></li>
+                      <li><a href="#">$ USD</a></li>
+                      <li><a href="#">€ EUR</a></li>
+                      <li><a href="#">$ AUD</a></li>
+                    </ul>
+                  </div><!-- /btn-group -->
+                  <input id="companyTurnover" type="text" class="form-control" aria-label="...">
+                </div><!-- /input-group -->
+
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -123,7 +134,7 @@
             <div class="form-group row">
               <div class="col-sm-6">
                 <label for="noEmployees">Number of employees</label>
-                <input type="number" class="form-control" id="noEmployees" aria-describedby="noEmployeesHelp" placeholder="n">
+                <input type="number" class="form-control" id="noEmployees" aria-describedby="noEmployeesHelp" placeholder="">
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -133,12 +144,12 @@
 
 
             <div class="form--actions">
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-5 text-center">
                 <label for="saveApplicationBack">Previous Step: <span>Your details</span></label>
                 <input id="saveApplicationBack" type="button" class="btn btn-primary form-control" onClick="location.href='application-1-your-details.html'" value="Save and go back" />
               </div>
 
-              <div class="col-sm-4 col-sm-offset-4 text-center">
+              <div class="col-sm-5 col-sm-offset-2 text-center">
                 <label for="saveApplicationCont">Next Step: <span>Project details</span></label>
                 <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-3-project-details.html'" value="Save and continue" />
               </div>

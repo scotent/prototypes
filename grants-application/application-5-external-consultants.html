@@ -71,16 +71,16 @@
             <div class="form-group row">
               <div class="col-sm-6">
                 
-                <label for="applicationFName">Are you using one or more external consultant to deliver the project details in this application?</label>
-                <div>
+                <fieldset>
+                  <legend>Are you using one or more external consultant to deliver the project details in this application?</legend>
                   <label class="radio-inline"><input type="radio" name="externalConsultants" checked>No</label>
                   <label class="radio-inline"><input type="radio" name="externalConsultants">Yes</label>
-                </div>
   
-                <div class="form-sub-group">
-                  <label for="applicationLName">If yes, please explain</label>
-                    <textarea id="projectDesc" class="form-control" rows="3"></textarea>
-                </div>
+                  <div class="form-sub-group hidden">
+                    <label for="externalConsultExpl">If yes, please explain</label>
+                    <textarea id="externalConsultExpl" class="form-control" rows="3"></textarea>
+                  </div>
+                </fieldset>
 
               </div>
               <div class="col-sm-6 help--text">
@@ -91,33 +91,33 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-              <label for="applicationFName">Have competitive quotes been obtained?</label>
-              <div>
-                <label class="radio-inline"><input type="radio" name="quotesObtained" checked>No</label>
-                <label class="radio-inline"><input type="radio" name="quotesObtained">Yes</label>
-              </div>
-              
-              <input type="file" name="fileupload" value="fileupload" id="fileupload">
-
+                <fieldset>
+                  <legend>Have competitive quotes been obtained?</legend>
+                    <label class="radio-inline"><input type="radio" name="quotesObtained" checked>No</label>
+                    <label class="radio-inline"><input type="radio" name="quotesObtained">Yes</label>
+                    <div class="form-sub-group hidden">
+                      <input type="file" name="quotesupload" value="fileupload" id="fileupload">
+                    </div>
+                </fieldset>
+    
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               </div>
-
             </div>
             
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="applicationFName">Is there any declared interest from either party?</label>
-                <div>
+                <fieldset>
+                <legend>Is there any declared interest from either party?</legend>
                   <label class="radio-inline"><input type="radio" name="declaredInterest" checked>No</label>
                   <label class="radio-inline"><input type="radio" name="declaredInterest">Yes</label>
-                </div>
 
-                <div class="form-sub-group">
-                  <label for="applicationLName">If yes, please explain</label>
-                  <textarea id="projectDesc" class="form-control" rows="3"></textarea>
+                <div class="form-sub-group hidden">
+                  <label for="declaredInterestsExpl">If yes, please explain</label>
+                  <textarea id="declaredInterestsExpl" class="form-control" rows="3"></textarea>
                 </div>
+                </fieldset>
 
               </div>
                 <div class="col-sm-6 help--text">
@@ -127,12 +127,12 @@
 
             
             <div class="form--actions">
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-5 text-center">
                 <label for="saveApplicationBack">Previous Step: <span>Project outputs</span></label>
                 <input id="saveApplicationBack" type="button" class="btn btn-primary form-control" onClick="location.href='application-4-project-outputs.html'" value="Save and go back" />
               </div>
 
-              <div class="col-sm-4 col-sm-offset-4 text-center">
+              <div class="col-sm-5 col-sm-offset-2 text-center">
                 <label for="saveApplicationCont">Next Step: <span>Deliverables</span></label>
                 <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-6-deliverables.html'" value="Save and continue" />
               </div>

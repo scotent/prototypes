@@ -70,62 +70,65 @@
 
             <div class="form-group row">
               <div class="col-sm-6">
-                <label for="noEmployees">Business Benefits</label>
+                <fieldset>
+                <legend>Business Benefits</legend>
 
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsSales">
+                    <input id="benefitsSales" type="checkbox" value="">
                     increased sales
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsProfits">
+                    <input id="benefitsProfits" type="checkbox" value="">
                     increased profits
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsProcess">
+                    <input id="benefitsProcess" type="checkbox" value="">
                     new service or process
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsLeadership">
+                    <input id="benefitsLeadership" type="checkbox" value="">
                     improved leadership or management capability
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsInfrastructure">
+                    <input id="benefitsInfrastructure" type="checkbox" value="">
                     improved ICT or other infrastructure
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsMarkets">
+                    <input id="benefitsMarkets" type="checkbox" value="">
                     new markets entered 
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsKnowledge">
+                    <input id="benefitsKnowledge" type="checkbox" value="">
                     improved knowledge
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="benefitsEfficiency">
+                    <input id="benefitsEfficiency" type="checkbox" value="">
                     efficiency gains
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label>
-                    <input type="checkbox" value="">
+                  <label for="">
+                    <input id="benefitsOther" type="checkbox" value="">
                     Other (Please describe in box)
+                    <textarea id="benefitsOtherDesc" class="form-control hidden" rows="3"></textarea>
                   </label>
                 </div>
+                </fieldset>
               </div>
               <div class="col-sm-6 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -134,10 +137,11 @@
 
 
             <div class="form-group row">
-              <div class="col-sm-6">
-                <label for="noEmployees">Outputs forecast as a DIRECT result of THIS PROJECT (in Scotland)</label>
+              <div class="col-sm-8">
+                <fieldset>
+                <legend>Outputs forecast as a DIRECT result of THIS PROJECT (in Scotland)</legend>
                 
-                <table>
+                <table class="table">
                   <tr>
                     <th>Domestic Sales (£)</th>
                     <td>
@@ -210,10 +214,10 @@
                     </td>
                   </tr>
                 </table>
-
                 
+                </fieldset>
               </div>
-              <div class="col-sm-6 help--text">
+              <div class="col-sm-4 help--text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               </div>
             </div>
@@ -221,12 +225,12 @@
 
 
             <div class="form--actions">
-              <div class="col-sm-4 text-center">
+              <div class="col-sm-5 text-center">
                 <label for="saveApplicationBack">Previous Step: <span>Project details</span></label>
                 <input id="saveApplicationBack" type="button" class="btn btn-primary form-control" onClick="location.href='application-3-project-details.html'" value="Save and go back" />
               </div>
 
-              <div class="col-sm-4 col-sm-offset-4 text-center">
+              <div class="col-sm-5 col-sm-offset-2 text-center">
                 <label for="saveApplicationCont">Next Step: <span>External consultants</span></label>
                 <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-5-external-consultants.html'" value="Save and continue" />
               </div>
