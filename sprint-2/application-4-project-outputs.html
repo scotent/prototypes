@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contracts & Grants by Scotent</title>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -33,7 +33,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="">Sign in / Register</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jane Doe <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="your-dashboard.html">Your Dashboard</a></li>
+                <li><a href="sign-out.html">Sign Out</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -120,11 +126,11 @@
                   </label>
                 </div>
                 <div class="checkbox">
-                  <label for="">
+                  <label for="benefitsOther">
                     <input id="benefitsOther" type="checkbox" value="">
                     Other (Please describe in box)
-                    <textarea id="benefitsOtherDesc" class="form-control hidden" rows="3"></textarea>
                   </label>
+                  <textarea id="benefitsOtherDesc" class="form-control hidden" rows="3"></textarea>
                 </div>
                 </fieldset>
               </div>
