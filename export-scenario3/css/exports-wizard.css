@@ -1,0 +1,14 @@
+#working{font-size:150px}
+
+.se_radio a {
+  display: block;
+  background: white;
+  border: 1px solid;
+  height: 120px;;
+  padding: 1em;
+  color: #666;
+}
+
+.se_radio a:hover {
+  text-decoration: none;
+}
