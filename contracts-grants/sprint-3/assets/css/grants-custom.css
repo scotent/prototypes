@@ -1,0 +1,102 @@
+ol#progress--indicator {
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+}
+ol#progress--indicator li {
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+ol#progress--indicator li span.light {
+  height: 1em;
+  width: 1em;
+  background: grey;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.125em;
+}
+ol#progress--indicator li.current--step span.light {
+  background: black;
+}
+ol#progress--indicator li.complete span.light {
+  background: green;
+}
+ol#progress--indicator li.incomplete span.light {
+  background: orange;
+}
+section.form-preview h3 {
+  margin: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+.page-header h1 {
+  margin: 0;
+}
+.form-preview-row {
+  padding: 0 0 0.5em 0;
+}
+.media {
+  margin-top: 15px;
+}
+.media:first-child {
+  margin-top: 0;
+}
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden;
+}
+.media-body {
+  width: 10000px;
+}
+.media-object {
+  display: block;
+}
+.media-object.img-thumbnail {
+  max-width: none;
+}
+.media-right,
+.media > .pull-right {
+  padding-left: 10px;
+}
+.media-left,
+.media > .pull-left {
+  padding-right: 10px;
+}
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.media-middle {
+  vertical-align: middle;
+}
+.media-bottom {
+  vertical-align: bottom;
+}
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.media-list {
+  padding-left: 0;
+  list-style: none;
+}
+legend {
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  border-bottom: none;
+}
+.input--short {
+  max-width: 120px;
+}

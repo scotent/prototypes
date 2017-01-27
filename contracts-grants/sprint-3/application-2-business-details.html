@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contracts & Grants by Scotent</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/grants-custom.css">
+
+
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Scottish Enterprise</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jane Doe <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="your-dashboard.html">Your Dashboard</a></li>
+                <li><a href="sign-out.html">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <main id="content" class="container">
+      <header class="page-header">
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Support & Funding</a></li>
+          <li class="active">Domestic Market Development Support</li>
+        </ol>
+        <h1 class="page--title">Application form: <span>Business details</span></h1>
+      </header>
+      
+      <div id="page--content" class="row">
+        
+        <div class="col-sm-3">
+          
+          <ol id="progress--indicator">
+            <li class="current--step"><a href="application-2-business-details.html"><span class="light"></span>Business details</a></li>
+            <li class=""><a href="application-3-project-details.html"><span class="light"></span>Project details</a></li>
+            <li class=""><a href="application-4-project-outputs.html"><span class="light"></span>Project outputs</a></li>
+            <li class=""><a href="application-5-external-consultants.html"><span class="light"></span>External Consultants</a></li>
+            <li class=""><span class="light"></span>Preview</li>            
+          </ol>
+
+        </div>
+
+        <div class="col-sm-9">
+          <form>
+
+            <div class="form-group has-success row">
+              <div class="col-sm-6">
+                <label for="companyName">Company name</label>
+                <input type="text" class="form-control" id="companyName" aria-describedby="companyNameHelp" value="Jane's Jams">
+              </div>
+              <div class="col-sm-6 help--text">
+                <div id="companyNameHelp">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div> 
+              </div>
+            </div>
+
+            <div class="form-group has-success row">
+              <div class="col-sm-6">
+                <label for="companyRegNo">Companies House registration number</label>
+                <input type="text" class="form-control" id="companyRegNo" aria-describedby="companyRegNoHelp" value="SC1234567">
+              </div>
+              <div class="col-sm-6 help--text">
+                <div id="companyRegNoHelp">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div> 
+              </div>
+            </div>
+
+            <div class="form-group has-success row">
+              <div class="col-sm-6">
+                <fieldset>
+                  <legend>Is the company an SME or a large enterprise?</legend>
+                  <label class="radio-inline">
+                    <input type="radio" name="companyTypeOptions" id="companyTypeSME" value="SME" checked=""> SME
+                  </label>
+                  
+                  <label class="radio-inline">
+                    <input type="radio" name="companyTypeOptions" id="companyTypeEnterprise" value="Enterprise"> Enterprise
+                  </label>
+                  </fieldset>
+              </div>
+                  
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </div>
+            </div>
+
+            <div class="form-group has-success row">
+              <div class="col-sm-6">
+                <label for="companyTurnover">Company turnover</label>
+                <input type="number" class="form-control" id="companyTurnover" aria-describedby="companyRegNoHelp" value="3000000">
+              </div>
+              <div class="col-sm-6 help--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              </div>
+            </div>
+
+
+            <div class="form-group has-success row">
+              <div class="col-sm-6">
+                <label for="noEmployees">Number of employees</label>
+                <input type="number" class="form-control" id="noEmployees" aria-describedby="noEmployeesHelp" value="20">
+              </div>
+              <div class="col-sm-6 help--text">
+                <div id="noEmployeesHelp">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div> 
+              </div>
+            </div>
+
+
+
+            <div class="form--actions">
+              <div class="col-sm-5 text-center">
+                <label for="saveApplicationBack">Previous Step: <span>Your details</span></label>
+                <input id="saveApplicationBack" type="button" class="btn btn-primary form-control" onClick="location.href='application-1-your-details.html'" value="Save and go back" />
+              </div>
+
+              <div class="col-sm-5 col-sm-offset-2 text-center">
+                <label for="saveApplicationCont">Next Step: <span>Project details</span></label>
+                <input id="saveApplicationCont" type="button"  class="btn btn-primary form-control" onClick="location.href='application-3-project-details.html'" value="Save and continue" />
+              </div>
+            </div>
+            
+          </form>
+          
+        </div>
+      
+      </div>
+      
+    </main>
+      
+  </body>
+</html>
