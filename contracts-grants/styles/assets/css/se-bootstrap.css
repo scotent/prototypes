@@ -110,13 +110,21 @@ form {
       font-size: 1.25em; }
 
 /* SE Navbar Styles */
-.navbar-brand {
-  padding: 0.5em 0; }
-  .navbar-brand img {
-    max-height: 30px; }
+.navbar {
+  margin-bottom: 0; }
+  .navbar .navbar-brand {
+    padding: 0.5em 0; }
+    .navbar .navbar-brand img {
+      max-height: 30px; }
+
+.page-header {
+  background: white;
+  margin: 0;
+  padding: 2em 0 2em 0 !important; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  background: #ecf0f1; }
 
 main {
   margin-bottom: 100px; }
