@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Top navbar example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="http://localhost/prototypes/contracts-grants/styles/assets/css/se-bootstrap.css">
+        
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <app><div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav-menu><div class="main-nav">
+        
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#"><img src="http://localhost/prototypes/contracts-grants/styles/assets/img/scottish-enterprise.svg" alt="Scottish Enterprise"></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="" id="loginLink">Sign in / Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </nav-menu>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 body-content">
+                <router-outlet></router-outlet><application><main class="container" id="content">
+        <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li>Support &amp; Funding</li>
+                <li class="active">Domestic Market Development Support</li>
+            </ol>
+            <h1 class="page--title">Application Form: <span>Project Resources</span></h1>
+        </header>
+    
+    </grant-breadcrumb>
+        <div class="row" id="page--content">
+            <div class="col-sm-3">
+                <grant-applicationstages><ol id="progress--indicator">
+        
+        <li class="complete"><span class="light"></span>Business details</li>
+        <li class="complete"><span class="light"></span>Project details</li>
+        <li class="complete"><span class="light"></span>Project outputs</li>
+        <li class="current--step"><span class="light"></span>Project resources</li>
+        <li><span class="light"></span>Project costs</li>
+        <li><span class="light"></span>Preview</li>
+    </ol>
+    
+    </grant-applicationstages>
+            </div>
+            <router-outlet></router-outlet><external-consultants><div class="col-sm-9">
+        <form novalidate="" class="ng-dirty ng-invalid ng-touched">
+            <div class="form-group row">
+                <div class="col-sm-6">
+                    <error-summary _nghost-yxb-9=""><!--template bindings={}--></error-summary>
+                </div>
+            </div>
+            <section class="well well-sm">
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <fieldset>
+                            <legend>Are you hiring a temporary staff member or an external consultant?</legend>
+                            <p class="help-block">A temporary staff member is someone on your payroll who you pay a salary. An external consultant is someone outside your company who'll normally invoice you for specific work.</p>
+                            <label class="radio-inline">
+                                <input id="usingExternalConsultantsNo" name="usingExternalConsultants" ng-control="options" required="" type="radio" class="ng-valid ng-untouched ng-pristine"> temporary staff member 
+                            </label>
+                            <br>
+                            <label class="radio-inline">
+                                <input id="usingExternalConsultantsYes" name="usingExternalConsultants" ng-control="options" required="" type="radio" class="ng-valid ng-untouched ng-pristine"> external consultant 
+                            </label>
+                            <!--template bindings={}-->
+                        </fieldset>
+                    </div>
+    
+                </div>
+            </section>
+    
+            <!--template bindings={}--><section class="well well-sm">
+                <div class="form-group row">
+                    <fieldset>
+                        <div class="col-sm-12">
+    
+                            <legend>Did you get competitive quotes for this work?</legend>
+                            <p class="help-block">
+                                A quote from more than one consultant will help you decide if you're getting the best fee and service for the project.
+                            </p>
+                            <label class="radio-inline">
+                                <input id="quoteObtainedNo" name="quoteObtained" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> no
+                            </label>
+                            <br>
+                            <label class="radio-inline">
+                                <input id="quoteObtainedYes" name="quoteObtained" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> yes
+                            </label>
+                            <br>
+                            <br>
+                            <!--template bindings={}-->
+                        </div>
+                        <div class="col-sm-6">
+                            <!--template bindings={}--><div>
+                                <multi-file-upload name="fileUploads" noattachmentvalidator="" _nghost-yxb-14="" class="ng-untouched ng-pristine ng-invalid"><!--template bindings={}-->
+    <div _ngcontent-yxb-14="" class="form-sub-group">
+        <input _ngcontent-yxb-14="" class="form-control" id="quotesFile" type="file" value="quotesFile">
+        <!--template bindings={}-->
+    </div>
+    </multi-file-upload>
+                                <!--template bindings={}-->
+                            </div>
+                        </div>
+                        <div class="col-sm-11">
+                            <!--template bindings={}-->
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+    
+            <!--template bindings={}--><section class="well well-sm">
+                <div class="form-group row">
+                    <div class="col-sm-11">
+                        <fieldset>
+                            <legend>Do any third parties have a declared interest in the project?</legend>
+                            <p class="help-block">Tell us if anyone involved in the project will gain a personal benefit which could mean a conflict
+                                of interest.</p>
+                            <label class="radio-inline">
+                                <input id="declaredInterestNo" name="declaredInterest" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> no
+                            </label>
+                            <br>
+                            <label class="radio-inline">
+                                <input change="formRef.resetForm(formRef.value)" id="declaredInterestYes" name="declaredInterest" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> yes
+                            </label>
+                            <!--template bindings={}-->
+                            <!--template bindings={}--><div class="form-sub-group">
+                                <br>
+                                <label for="declaredInterestDescription">Please give us details about this conflict of interest</label>
+                                <p class="help-block">500 characters is around 100 words.</p><span class="pull-right">0/500</span>
+                                <textarea class="form-control ng-untouched ng-pristine ng-invalid" id="declaredInterestDescription" maxlength="500" name="declaredInterestDescription" required="" rows="3"></textarea>
+                                <!--template bindings={}-->
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+    
+            </section>
+    
+            <div class="form--actions">
+                <div class="col-sm-5 text-center">
+                    <label for="saveApplicationBack">Previous step: <span>Project outputs</span></label>
+                    <a href="Project-Outputs.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+                </div>
+                <div class="col-sm-5 col-sm-offset-2 text-center">
+                    <label for="saveApplicationCont">Next step: <span>Project costs</span></label>
+                    <a href="Project-Costs.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
+                </div>
+            </div>
+        </form>
+    </div></external-consultants>
+        </div>
+    </main>
+    </application>
+            </div>
+        </div>
+    </div>
+    </app>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Top navbar example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="http://localhost/prototypes/contracts-grants/styles/assets/css/se-bootstrap.css">
+        
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<app><div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav-menu><div class="main-nav">
+    
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="http://localhost/prototypes/contracts-grants/styles/assets/img/scottish-enterprise.svg" alt="Scottish Enterprise"></a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="" id="loginLink">Sign in / Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+</nav-menu>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 body-content">
+            <router-outlet></router-outlet><application><main class="container" id="content">
+    <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li>Support &amp; Funding</li>
+            <li class="active">Domestic Market Development Support</li>
+        </ol>
+        <h1 class="page--title">Application Form: <span>Project Details</span></h1>
+    </header>
+
+</grant-breadcrumb>
+    <div class="row" id="page--content">
+        <div class="col-sm-3">
+            <grant-applicationstages><ol id="progress--indicator">
+    
+    <li class="complete"><span class="light"></span>Business details</li>
+    <li class="current--step"><span class="light"></span>Project details</li>
+    <li><span class="light"></span>Project outputs</li>
+    <li><span class="light"></span>Project resources</li>
+    <li><span class="light"></span>Project costs</li>
+    <li><span class="light"></span>Preview</li>
+</ol>
+
+</grant-applicationstages>
+        </div>
+        <router-outlet></router-outlet><project-details _nghost-yxb-13=""><div _ngcontent-yxb-13="" class="col-sm-9">
+    <form _ngcontent-yxb-13="" novalidate="" class="ng-untouched ng-pristine ng-invalid">
+        <div _ngcontent-yxb-13="" class="form-group row">
+            <div _ngcontent-yxb-13="" class="col-sm-10">
+                <error-summary _ngcontent-yxb-13="" _nghost-yxb-9=""><!--template bindings={}--></error-summary>
+            </div>
+        </div>
+        <div _ngcontent-yxb-13="" class="form-group row well well-sm">
+            <div _ngcontent-yxb-13="" class="col-sm-11">
+                <label _ngcontent-yxb-13="" for="projectTitle">Project title</label><span _ngcontent-yxb-13="" class="pull-right"> 0 / 100 </span>
+                <p _ngcontent-yxb-13="" class="help-block">Choose a short title that describes your project. 100 characters is about 20 words.</p>
+                <input _ngcontent-yxb-13="" aria-describedby="noEmployeesHelp" class="form-control ng-untouched ng-pristine ng-invalid" id="projectTitle" maxlength="100" name="projectTitle" placeholder="please enter the project title" required="" type="text">
+                <!--template bindings={}-->
+            </div>
+        </div>
+        <div _ngcontent-yxb-13="" class="form-group row well well-sm">
+            <div _ngcontent-yxb-13="" class="col-sm-11">
+                <label _ngcontent-yxb-13="" for="projectDescription">Project description</label><span _ngcontent-yxb-13="" class="pull-right"> 0 / 1000 </span>
+                <p _ngcontent-yxb-13="" class="help-block">Explain how your project contributes to your business strategy and benefits your company. 1000 characters
+                    is about 200 words.</p>
+                <textarea _ngcontent-yxb-13="" class="form-control ng-untouched ng-pristine ng-invalid" id="projectDescription" maxlength="1000" name="projectDescription" required="" rows="3"></textarea>
+                <!--template bindings={}-->
+            </div>
+        </div>
+
+        <div _ngcontent-yxb-13="" class="form-group row well well-sm">
+            <div _ngcontent-yxb-13="" class="col-sm-11">
+                <label _ngcontent-yxb-13="" for="fileUploads">Please upload any documents to support your project description</label>
+                <p _ngcontent-yxb-13="" class="help-block">Example documents include your project plan, marketing strategy or sales forecast. Each file size should
+                    not be more than 10MB.</p>
+
+            </div>
+            <div _ngcontent-yxb-13="" class="col-sm-7">
+                <multi-file-upload _ngcontent-yxb-13="" id="fileUploads" name="fileUploads" _nghost-yxb-14="" class="ng-untouched ng-pristine ng-valid"><!--template bindings={}-->
+<div _ngcontent-yxb-14="" class="form-sub-group">
+    <input _ngcontent-yxb-14="" class="form-control" id="quotesFile" type="file" value="quotesFile">
+    <!--template bindings={}-->
+</div>
+</multi-file-upload>
+                <!--template bindings={}-->
+            </div>
+        </div>
+
+        <div _ngcontent-yxb-13="" class="form-group row well well-sm">
+            <div _ngcontent-yxb-13="" class="col-sm-11">
+
+                <label _ngcontent-yxb-13="" for="projectStartDate">Start date</label>
+                <p _ngcontent-yxb-13="" class="help-block">
+                    Tell us when you'd like to start the project. Please note that the project can't start until we've approved your application.
+                </p>
+                <div _ngcontent-yxb-13="">
+                    <div _ngcontent-yxb-13="" class="input-group date">
+                        <input _ngcontent-yxb-13="" class="form-control input-sm ng-untouched ng-pristine ng-invalid" id="startDateString" name="startDateString" required="" type="text" validatedate="">
+                        <span _ngcontent-yxb-13="" class="input-group-addon">
+                                <span _ngcontent-yxb-13="" class="glyphicon-calendar glyphicon"></span>
+                        </span>
+                    </div>
+                    <!--template bindings={}-->
+                </div>
+                <!--template bindings={}-->
+                <!--template bindings={}-->
+
+            </div>
+        </div>
+        <div _ngcontent-yxb-13="" class="form-group row well well-sm">
+            <div _ngcontent-yxb-13="" class="col-sm-11">
+                <fieldset _ngcontent-yxb-13="">
+                    <legend _ngcontent-yxb-13="">
+                        Project Duration
+                    </legend>
+                    <p _ngcontent-yxb-13="" class="help-block">Please tell us how long you think the project will take.</p>
+                    <!--template bindings={}--><div _ngcontent-yxb-13="" class="radio">
+                        <label _ngcontent-yxb-13="" for="duration1">
+                        <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration1" class="ng-untouched ng-pristine ng-invalid">
+                        under 6 months
+                        </label>
+                    </div><div _ngcontent-yxb-13="" class="radio">
+                        <label _ngcontent-yxb-13="" for="duration2">
+                        <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration2" class="ng-untouched ng-pristine ng-invalid">
+                        between 6 months and 1 year
+                        </label>
+                    </div><div _ngcontent-yxb-13="" class="radio">
+                        <label _ngcontent-yxb-13="" for="duration3">
+                        <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration3" class="ng-untouched ng-pristine ng-invalid">
+                        between 1 and 2 years
+                        </label>
+                    </div><div _ngcontent-yxb-13="" class="radio">
+                        <label _ngcontent-yxb-13="" for="duration4">
+                        <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration4" class="ng-untouched ng-pristine ng-invalid">
+                        over 2 years
+                        </label>
+                    </div>
+                </fieldset>
+                <!--template bindings={}-->
+            </div>
+        </div>
+        <div _ngcontent-yxb-13="" class="form--actions row">
+            <div _ngcontent-yxb-13="" class="col-sm-5 text-center">
+                <label _ngcontent-yxb-13="" for="saveApplicationBack">Previous step: <span _ngcontent-yxb-13="">Business details</span></label>
+               <a href="Business-Details.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+            </div>
+            <div _ngcontent-yxb-13="" class="col-sm-5 col-sm-offset-2 text-center">
+                <label _ngcontent-yxb-13="" for="saveApplicationCont">Next step: <span _ngcontent-yxb-13="">Project outputs</span></label>
+                <a href="Project-Outputs.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
+            </div>
+        </div>
+    </form>
+
+</div></project-details>
+    </div>
+</main>
+</application>
+        </div>
+    </div>
+</div>
+</app>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

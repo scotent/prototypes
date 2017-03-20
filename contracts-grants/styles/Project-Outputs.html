@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Top navbar example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="http://localhost/prototypes/contracts-grants/styles/assets/css/se-bootstrap.css">
+        
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <app><div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav-menu><div class="main-nav">
+        
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#"><img src="http://localhost/prototypes/contracts-grants/styles/assets/img/scottish-enterprise.svg" alt="Scottish Enterprise"></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="" id="loginLink">Sign in / Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </nav-menu>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 body-content">
+                <router-outlet></router-outlet><application><main class="container" id="content">
+        <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li>Support &amp; Funding</li>
+                <li class="active">Domestic Market Development Support</li>
+            </ol>
+            <h1 class="page--title">Application Form: <span>Project Outputs</span></h1>
+        </header>
+    
+    </grant-breadcrumb>
+        <div class="row" id="page--content">
+            <div class="col-sm-3">
+                <grant-applicationstages><ol id="progress--indicator">
+        
+        <li class="complete"><span class="light"></span>Business details</li>
+        <li class="complete"><span class="light"></span>Project details</li>
+        <li class="current--step"><span class="light"></span>Project outputs</li>
+        <li><span class="light"></span>Project resources</li>
+        <li><span class="light"></span>Project costs</li>
+        <li><span class="light"></span>Preview</li>
+    </ol>
+    
+    </grant-applicationstages>
+            </div>
+            <router-outlet></router-outlet><project-outputs><div class="col-sm-9">
+        <form novalidate="" class="ng-untouched ng-pristine ng-invalid">
+            <error-summary _nghost-yxb-9=""><!--template bindings={}--></error-summary>
+            <section class="well well-sm">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <label for="projectBenifitDescription">Long term benefits of this project</label><br>
+                        <div class="help-block" id="businessBenefitsHelp">
+                            Please tell us the business benefits of the project. This could be a new or improved product, service or process; improved leadership or management capability; improved ICT or other infrastructure; new markets entered; improved knowledge; efficiency gains. 1000 characters is around 200 words.
+                        </div>
+                        <span class="pull-right"> 0 / 1000 </span>
+                        <textarea class="form-control ng-untouched ng-pristine ng-invalid" id="projectBenifitDescription" maxlength="1000" name="projectBenefitDescription" required="" rows="3"></textarea>
+                        <!--template bindings={}-->
+                    </div>
+                </div>
+            </section>
+            <section class="well well-sm">
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <label>Long term benefits of this project</label><br>
+                        <div class="help-block" id="longTermBusinessBenefitsHelp">
+                            Please give us information as a direct result of your business in Scotland and not your business as a whole. Tell us what you think the impact will be in years 1, 2 and 3.
+                        </div>
+                    </div>
+                </div>
+                <!--template bindings={}--><div class="form-group row">
+                    <div class="col-sm-12">
+                        <!--template bindings={}--><label id="benefitCaption0">Do you expect to see an increase in turnover as a result of this project?</label>
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <br>
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo0" class="ng-untouched ng-pristine ng-invalid"> no
+                        <br>
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <hr>
+                    </div>
+    
+                </div><div class="form-group row">
+                    <div class="col-sm-12">
+                        <!--template bindings={}-->
+                        <!--template bindings={}--><label id="benefitCaption1">Do you expect any international revenue as a result of this project?</label>
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <br>
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo1" class="ng-untouched ng-pristine ng-invalid"> no
+                        <br>
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <hr>
+                    </div>
+    
+                </div><div class="form-group row">
+                    <div class="col-sm-12">
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}--><label id="benefitCaption2">Do you expect to create more jobs?</label>
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <br>
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo2" class="ng-untouched ng-pristine ng-invalid"> no
+                        <br>
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <hr>
+                    </div>
+    
+                </div><div class="form-group row">
+                    <div class="col-sm-12">
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}--><label id="benefitCaption3">Do you expect to create any high value jobs?</label>
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <br>
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo3" class="ng-untouched ng-pristine ng-invalid"> no
+                        <br>
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <hr>
+                    </div>
+    
+                </div><div class="form-group row">
+                    <div class="col-sm-12">
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}--><label id="benefitCaption4">Do you expect to be able to safeguard any jobs?</label>
+                        <!--template bindings={}-->
+                        <br>
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo4" class="ng-untouched ng-pristine ng-invalid"> no
+                        <br>
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <hr>
+                    </div>
+    
+                </div><div class="form-group row">
+                    <div class="col-sm-12">
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <!--template bindings={}--><label id="benefitCaption5">Do you expect to make any savings as a result of this project?</label>
+                        <br>
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo5" class="ng-untouched ng-pristine ng-invalid"> no
+                        <br>
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <!--template bindings={}-->
+                        <!--template bindings={}-->
+                        <hr>
+                    </div>
+    
+                </div>
+            </section>
+            <div class="form--actions">
+                <div class="col-sm-5 text-center">
+                    <label for="saveApplicationBackFromprojectOutput">Previous step: <span>Project details</span></label>
+                <a href="Project-Details.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+                </div>
+                <div class="col-sm-5 col-sm-offset-2 text-center">
+                    <label for="saveApplicationContinueFromProjectOutput">Next step: <span>Project resources</span></label>
+                    <a href="Project-Resources.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
+                </div>
+            </div>
+        </form>
+        
+    </div></project-outputs>
+        </div>
+    </main>
+    </application>
+            </div>
+        </div>
+    </div>
+    </app>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

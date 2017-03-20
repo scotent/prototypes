@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 10px;
+  width: auto;
+}
+
+
+#progress--indicator {
+  margin: 0;
+  padding: 1em 0 ;
+}
+
+/* Fieldset */
+
+form.se fieldset {
+  padding: 2em 0;
+}
+
+
+form.se fieldset:first-of-type {
+  padding: 1em 0 2em;
+}
+
+
+label {
+  font-size: 1.25em;
+}
+
+label.input-label {
+  border: 2px solid transparent;
+  font-weight: normal;
+  font-size: 1em;
+  display: block;
+  padding: 1em;
+  background: #F4F5F6;
+}
+
+label.input-label input[type=radio] {
+  margin-right: 0.5em;
+}
+
+label.input-label:hover {
+  border: 2px solid #00CC00;
+}
+
+
+footer {
+  margin-top: 50px;
+  min-height: 200px;
+  background: #ecf0f1;
+}

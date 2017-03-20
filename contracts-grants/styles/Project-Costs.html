@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Top navbar example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="http://localhost/prototypes/contracts-grants/styles/assets/css/se-bootstrap.css">
+        
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <app><div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <nav-menu><div class="main-nav">
+        
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="#"><img src="http://localhost/prototypes/contracts-grants/styles/assets/img/scottish-enterprise.svg" alt="Scottish Enterprise"></a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="" id="loginLink">Sign in / Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    </nav-menu>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 body-content">
+                <router-outlet></router-outlet><application><main class="container" id="content">
+        <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li>Support &amp; Funding</li>
+                <li class="active">Domestic Market Development Support</li>
+            </ol>
+            <h1 class="page--title">Application Form: <span>Project Costs</span></h1>
+        </header>
+    
+    </grant-breadcrumb>
+        <div class="row" id="page--content">
+            <div class="col-sm-3">
+                <grant-applicationstages><ol id="progress--indicator">
+        
+        <li class="complete"><span class="light"></span>Business details</li>
+        <li class="complete"><span class="light"></span>Project details</li>
+        <li class="complete"><span class="light"></span>Project outputs</li>
+        <li class="complete"><span class="light"></span>Project resources</li>
+        <li class="current--step"><span class="light"></span>Project costs</li>
+        <li><span class="light"></span>Preview</li>
+    </ol>
+    
+    </grant-applicationstages>
+            </div>
+            <router-outlet></router-outlet><project-costs><div class="col-sm-9">
+        <form novalidate="" class="ng-untouched ng-pristine ng-invalid">
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <error-summary _nghost-nta-11=""><!--template bindings={}--></error-summary>
+                </div>
+            </div>
+            <div class="form-group row well well-sm">
+                <div class="col-sm-11">
+                    <label for="projectTotalCost">What is the total cost of the project? </label>
+                    <p class="help-block">To help us understand the scale of the project, please include all related costs and not just staff and/or consultancy costs.</p>
+                    <div class="input-group col-sm-6">
+                        <div class="input-group-addon">£</div>
+                        <input class="form-control ng-untouched ng-pristine ng-invalid" id="projectTotalCost" maxlength="15" name="projectTotalCost" required="" type="text" validaterange="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+                    <!--template bindings={}-->
+                </div>
+            </div>
+            <div class="form-group row well well-sm">
+                <div class="col-sm-11">
+                    <label for="costToRecruit">What is the total cost to recruit this person for the duration of the project?</label>
+                    <p class="help-block">We’ll pay up to 30% of the cost of a consultant. We’ll pay up to 30% of the salary costs of a temporary staff member to a maximum of £18,000.00</p>
+                    <div class="input-group col-sm-6">
+                        <div class="input-group-addon">£</div>
+                        <input class="form-control ng-untouched ng-pristine ng-invalid" id="costToRecruit" maxlength="15" name="costToRecruit" required="" type="text" validaterange="">
+                    </div>
+                    <!--template bindings={}-->
+                    
+                </div>
+            </div>
+            <div class="form-group row well well-sm">
+                <div class="col-sm-11">
+                    <label for="contributeToProject">How much will you contribute to the project?</label>
+                    <p class="help-block">Tell us how much of your own money you’ll contribute to the total cost of the project.</p>
+                    <div class="input-group col-sm-6">
+                        <div class="input-group-addon">£</div>
+                        <input class="form-control ng-untouched ng-pristine ng-invalid" id="contributeToProject" maxlength="15" name="contributeToProject" required="" type="text" validaterange="">
+                    </div>
+                    <!--template bindings={}-->
+                </div>
+            </div>
+            <div class="form-group row well well-sm">
+                <div class="col-sm-11">
+                    <label> Project Costs</label>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="pull-left">Total costs</span>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <span class="pull-left">Resource costs</span>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <span class="pull-left">Your contribution</span>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <span class="pull-left">Maximum grant</span>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <div class="input-group-addon">£</div>
+                                <input class="form-control" id="totalCosts" name="totalCosts" type="text" disabled="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <div class="input-group-addon">£</div>
+                                <input class="form-control" id="costToRecruit" name="costToRecruit" type="text" disabled="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+    
+                            <div class="input-group">
+                                <div class="input-group-addon">£</div>
+                                <input class="form-control" id="contributeToProject" name="contributeToProject" type="text" disabled="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <div class="input-group-addon">£</div>
+                                <input class="form-control" id="maximumGrants" name="maximumGrants" type="text" disabled="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="help-block">The maximum grant for the salary costs of a temporary staff member is £18,000.00</p>
+                </div>
+            </div>
+            <div class="form--actions row">
+                <div class="col-sm-5 text-center">
+                    <label for="saveApplicationBack">Previous step: <span>Project resources</span></label>
+                    <a href="Project-Resources.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+                </div>
+                <div class="col-sm-5 col-sm-offset-2 text-center">
+                    <label for="saveApplicationCont">Next step: <span>Preview your submission</span></label>
+                    <a href="Preview.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
+                </div>
+            </div>
+        </form>
+    
+    </div></project-costs>
+        </div>
+    </main>
+    </application>
+            </div>
+        </div>
+    </div>
+    </app>
+            <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
