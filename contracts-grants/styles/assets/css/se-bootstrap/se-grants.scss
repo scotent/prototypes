@@ -16,8 +16,9 @@ main {
 
 ol#progress--indicator {
   margin: 1em 0;
-  padding: 0;
+  padding: 1em;
   font-size: 1.1em; 
+  background: white;
   
   li {
     list-style: none;
@@ -30,6 +31,7 @@ ol#progress--indicator {
      border-radius: 100%;
      display: inline-block;
      margin-right: 0.5em;
+     margin-left: 0.25em;
      position: relative;
      top: 7px;
      &::before {
@@ -44,7 +46,9 @@ ol#progress--indicator {
        border-radius: 100%;
      }
     }
-    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
     &.current--step {
       font-weight: bold;
       color: #000;

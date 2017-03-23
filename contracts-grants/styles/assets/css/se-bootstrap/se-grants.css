@@ -10,8 +10,9 @@ main {
 
 ol#progress--indicator {
   margin: 1em 0;
-  padding: 0;
-  font-size: 1.1em; }
+  padding: 1em;
+  font-size: 1.1em;
+  background: white; }
   ol#progress--indicator li {
     list-style: none;
     margin-bottom: 0.5em;
@@ -23,6 +24,7 @@ ol#progress--indicator {
       border-radius: 100%;
       display: inline-block;
       margin-right: 0.5em;
+      margin-left: 0.25em;
       position: relative;
       top: 7px; }
       ol#progress--indicator li span.light::before {
@@ -35,6 +37,8 @@ ol#progress--indicator {
         top: -3px;
         border: 1px solid black;
         border-radius: 100%; }
+    ol#progress--indicator li:last-of-type {
+      margin-bottom: 0; }
     ol#progress--indicator li.current--step {
       font-weight: bold;
       color: #000; }

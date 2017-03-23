@@ -1,22 +1,27 @@
 <!DOCTYPE html>
-<html class="">
+<html lang="en">
   <head>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page - Grants</title>
-        <base href="/">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all">
-      
-        <link rel="stylesheet" href="http://localhost/prototypes/contracts-grants/styles/assets/css/se-bootstrap.css">
-    <style type="text/css">.fancybox-margin{margin-right:0px;}</style><style>ol#progress--indicator{margin:0;padding:0;font-size:1.25em}ol#progress--indicator li{list-style:none;margin-bottom:.5em}ol#progress--indicator li span.light{height:1em;width:1em;background:grey;border-radius:.5em;display:inline-block;margin-right:.5em;position:relative;top:.125em}ol#progress--indicator li.current--step span.light{background:#000}ol#progress--indicator li.complete span.light{background:green}ol#progress--indicator li.incomplete span.light{background:orange}section.form-preview h3{margin:0}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{display:none;-webkit-appearance:none;margin:0}.page-header h1{margin:0}.form-preview-row{padding:0 0 .5em}.media{margin-top:15px}.media:first-child{margin-top:0}.media,.media-body{zoom:1;overflow:hidden}.media-body{width:10000px}.media-object{display:block}.media-object.img-thumbnail{max-width:none}.media-right,.media>.pull-right{padding-left:10px}.media-left,.media>.pull-left{padding-right:10px}.media-body,.media-left,.media-right{display:table-cell;vertical-align:top}.media-middle{vertical-align:middle}.media-bottom{vertical-align:bottom}.media-heading{margin-top:0;margin-bottom:5px}.media-list{padding-left:0;list-style:none}legend{font-size:14px;display:inline-block;margin-bottom:5px;font-weight:700;border-bottom:none}.input--short{max-width:120px}.well-sm{margin-bottom:.1em!important}</style><style>span.glyphicon[_ngcontent-thi-8]{
-            margin-top: 3px;
-        }</style></head>
-    <body>
-        <app><div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <nav-menu><div class="main-nav">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Top navbar example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/se-bootstrap.css">
+        
+    <!-- Custom styles for this template -->
+    <link href="navbar-top.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+<app>
+   <nav-menu><div class="main-nav">
+<div class="main-nav">
     
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
@@ -42,17 +47,21 @@
     </div>
     <div class="row">
         <div class="col-sm-12 body-content">
-            <router-outlet></router-outlet><userinfo><main class="container" id="content">
-    <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+            <router-outlet></router-outlet><userinfo>
+    <grant-breadcrumb stage="Domestic Market Development Support">
+    <header class="page-header row" id="breadcrumb">
+      <div class="container">
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
             <li>Support &amp; Funding</li>
             <li class="active">Domestic Market Development Support</li>
         </ol>
         <h1 class="page--title">Application Form: <span>New Account</span></h1>
+      </div>
     </header>
 
 </grant-breadcrumb>
+<main class="container" id="content">
     <div class="row" id="page--content">
         <div class="col-sm-3">
             <p>If you are new to Scottish Enterprise and don't have an online account with us you will have to provide us with details to allow us to save and process your application.</p>
@@ -102,9 +111,6 @@
         </div>
     </div>
 </main></userinfo>
-        </div>
-    </div>
-</div>
 </app>
 <script>
     appsettings = { baseUrl: 'http://devgrantapi.azurewebsites.net/api/', grantsUrl:'http://qa1grantapi.azurewebsites.net/api/' }

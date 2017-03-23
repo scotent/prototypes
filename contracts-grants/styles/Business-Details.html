@@ -20,10 +20,8 @@
 
   <body>
 
-<app><div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <nav-menu><div class="main-nav">
+<app>
+   <nav-menu><div class="main-nav">
     
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
@@ -45,21 +43,23 @@
     </nav>
 </div>
 </nav-menu>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 body-content">
-            <router-outlet></router-outlet><businessdetails><main class="container" id="content">
-    <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+
+            <router-outlet></router-outlet><businessdetails>
+            <grant-breadcrumb stage="Domestic Market Development Support">    
+            <header class="page-header" id="breadcrumb">
+              <div class="container">
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
             <li>Support &amp; Funding</li>
             <li class="active">Domestic Market Development Support</li>
         </ol>
         <h1 class="page--title">Application Form: <span>Business Details</span></h1>
+              </div>
     </header>
 
 </grant-breadcrumb>
+<main class="container" id="content">
+
     <div class="row" id="page--content">
         <div class="col-sm-3">
             <grant-applicationstages applicationid="companyInfo.id"><ol id="progress--indicator">
@@ -108,9 +108,12 @@
                             <div class="help-block" id="companyTypeOptionsHelp">
                                 You're an SME if you have fewer than 250 employees with an annual turnover of less than EURO 50m and are independent. You're independent as long as no large enterprise(s) own more than 25% of your capital or voting rights.
                             </div>
+                               <label for="companyTypeSME" class="block-label">
                                 <input id="companyTypeSME" name="companyTypeOptions" ng-control="options" required="" type="radio" value="SME" class="ng-valid ng-untouched ng-pristine"> SME
-                            <br>
+                               </label><br>
+                            <label for="companyTypeEnterprise" class="block-label">
                                 <input id="companyTypeEnterprise" name="companyTypeOptions" ng-control="options" required="" type="radio" value="Large Enterprise" class="ng-valid ng-untouched ng-pristine"> Enterprise
+                            </label>
                             <!--template bindings={}-->
                         </div>
                     </div>
@@ -199,21 +202,17 @@
                 </section>
                     <div class="form--actions">
                         <div class="form--actions">
-                            <div class="col-sm-4 col-sm-offset-8 text-center">
+                            <div class="col-sm-4 col-sm-offset-8">
                                 <label for="saveApplicationCont">Next step: <span>Project details</span></label>
                                 <a href="Project-Details.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
                             </div>
                         </div>
                     </div>
                 </form>
-        </div>
-    </div>
 </main>
 
 </businessdetails>
-        </div>
-    </div>
-</div>
+
 </app>
 
     <!-- Bootstrap core JavaScript

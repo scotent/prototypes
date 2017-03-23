@@ -20,48 +20,47 @@
 
   <body>
 
-    <app><div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <nav-menu><div class="main-nav">
-        
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+<app>
+   <nav-menu><div class="main-nav">
+    
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="#"><img src="http://localhost/prototypes/contracts-grants/styles/assets/img/scottish-enterprise.svg" alt="Scottish Enterprise"></a>
-                </div>
-                <div class="navbar-collapse collapse" id="navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="" id="loginLink">Sign in / Register</a></li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </div>
-    </nav-menu>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="" id="loginLink">Sign in / Register</a></li>
+                </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12 body-content">
-                <router-outlet></router-outlet><application><main class="container" id="content">
-        <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li>Support &amp; Funding</li>
-                <li class="active">Domestic Market Development Support</li>
-            </ol>
-            <h1 class="page--title">Application Form: <span>Project Outputs</span></h1>
-        </header>
-    
-    </grant-breadcrumb>
-        <div class="row" id="page--content">
-            <div class="col-sm-3">
+    </nav>
+</div>
+</nav-menu>
+
+            <router-outlet></router-outlet><application>
+            <grant-breadcrumb stage="Domestic Market Development Support">    
+            <header class="page-header" id="breadcrumb">
+              <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li>Support &amp; Funding</li>
+            <li class="active">Domestic Market Development Support</li>
+        </ol>
+        <h1 class="page--title">Application Form: <span>Project Outputs</span></h1>
+              </div>
+    </header>
+
+</grant-breadcrumb>
+<main class="container" id="content">
+    <div class="row" id="page--content">
+        <div class="col-sm-3">
                 <grant-applicationstages><ol id="progress--indicator">
         
         <li class="complete"><span class="light"></span>Business details</li>
@@ -108,9 +107,11 @@
                         <!--template bindings={}-->
                         <!--template bindings={}-->
                         <br>
-                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo0" class="ng-untouched ng-pristine ng-invalid"> no
+                        <label for="isOfBenefitToProjectNo0" class="block-label">
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo0" class="ng-untouched ng-pristine ng-invalid"> no</label>
                         <br>
-                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                         <label for="isOfBenefitToProjectYes" class="block-label">
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes</label>
                         <!--template bindings={}-->
                         <!--template bindings={}-->
                         <hr>
@@ -125,9 +126,11 @@
                         <!--template bindings={}-->
                         <!--template bindings={}-->
                         <br>
-                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo1" class="ng-untouched ng-pristine ng-invalid"> no
+                        <label for="isOfBenefitToProjectYes" class="block-label">
+                        <input ng-control="options" required="" type="radio" id="isOfBenefitToProjectNo1" class="ng-untouched ng-pristine ng-invalid"> no</label>
                         <br>
-                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes
+                        <label for="isOfBenefitToProjectYes" class="block-label">
+                        <input id="'isOfBenefitToProjectYes'+i" ng-control="options" required="" type="radio" class="ng-untouched ng-pristine ng-invalid"> yes</label>
                         <!--template bindings={}-->
                         <!--template bindings={}-->
                         <hr>
@@ -204,11 +207,11 @@
                 </div>
             </section>
             <div class="form--actions">
-                <div class="col-sm-5 text-center">
+                <div class="col-sm-5">
                     <label for="saveApplicationBackFromprojectOutput">Previous step: <span>Project details</span></label>
-                <a href="Project-Details.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+                <a href="Project-Details.html" class="btn btn-default form-control pull-right" id="saveApplicationCont">Save and go back</a>
                 </div>
-                <div class="col-sm-5 col-sm-offset-2 text-center">
+                <div class="col-sm-5 col-sm-offset-2">
                     <label for="saveApplicationContinueFromProjectOutput">Next step: <span>Project resources</span></label>
                     <a href="Project-Resources.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
                 </div>

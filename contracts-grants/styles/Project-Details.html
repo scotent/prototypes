@@ -20,10 +20,8 @@
 
   <body>
 
-<app><div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <nav-menu><div class="main-nav">
+<app>
+   <nav-menu><div class="main-nav">
     
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
@@ -45,21 +43,22 @@
     </nav>
 </div>
 </nav-menu>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 body-content">
-            <router-outlet></router-outlet><application><main class="container" id="content">
-    <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+
+            <router-outlet></router-outlet><application>
+            <grant-breadcrumb stage="Domestic Market Development Support">    
+            <header class="page-header" id="breadcrumb">
+              <div class="container">
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
             <li>Support &amp; Funding</li>
             <li class="active">Domestic Market Development Support</li>
         </ol>
         <h1 class="page--title">Application Form: <span>Project Details</span></h1>
+              </div>
     </header>
 
 </grant-breadcrumb>
+<main class="container" id="content">
     <div class="row" id="page--content">
         <div class="col-sm-3">
             <grant-applicationstages><ol id="progress--indicator">
@@ -83,17 +82,19 @@
         </div>
         <div _ngcontent-yxb-13="" class="form-group row well well-sm">
             <div _ngcontent-yxb-13="" class="col-sm-11">
-                <label _ngcontent-yxb-13="" for="projectTitle">Project title</label><span _ngcontent-yxb-13="" class="pull-right"> 0 / 100 </span>
+                <label _ngcontent-yxb-13="" for="projectTitle">Project title</label>
                 <p _ngcontent-yxb-13="" class="help-block">Choose a short title that describes your project. 100 characters is about 20 words.</p>
+                <span _ngcontent-yxb-13="" class="pull-right"> 0 / 100 </span>
                 <input _ngcontent-yxb-13="" aria-describedby="noEmployeesHelp" class="form-control ng-untouched ng-pristine ng-invalid" id="projectTitle" maxlength="100" name="projectTitle" placeholder="please enter the project title" required="" type="text">
                 <!--template bindings={}-->
             </div>
         </div>
         <div _ngcontent-yxb-13="" class="form-group row well well-sm">
             <div _ngcontent-yxb-13="" class="col-sm-11">
-                <label _ngcontent-yxb-13="" for="projectDescription">Project description</label><span _ngcontent-yxb-13="" class="pull-right"> 0 / 1000 </span>
+                <label _ngcontent-yxb-13="" for="projectDescription">Project description</label>
                 <p _ngcontent-yxb-13="" class="help-block">Explain how your project contributes to your business strategy and benefits your company. 1000 characters
                     is about 200 words.</p>
+                    <span _ngcontent-yxb-13="" class="pull-right"> 0 / 1000 </span>
                 <textarea _ngcontent-yxb-13="" class="form-control ng-untouched ng-pristine ng-invalid" id="projectDescription" maxlength="1000" name="projectDescription" required="" rows="3"></textarea>
                 <!--template bindings={}-->
             </div>
@@ -125,7 +126,7 @@
                     Tell us when you'd like to start the project. Please note that the project can't start until we've approved your application.
                 </p>
                 <div _ngcontent-yxb-13="">
-                    <div _ngcontent-yxb-13="" class="input-group date">
+                    <div _ngcontent-yxb-13="" class="input-group icon-right date">
                         <input _ngcontent-yxb-13="" class="form-control input-sm ng-untouched ng-pristine ng-invalid" id="startDateString" name="startDateString" required="" type="text" validatedate="">
                         <span _ngcontent-yxb-13="" class="input-group-addon">
                                 <span _ngcontent-yxb-13="" class="glyphicon-calendar glyphicon"></span>
@@ -146,22 +147,23 @@
                     </legend>
                     <p _ngcontent-yxb-13="" class="help-block">Please tell us how long you think the project will take.</p>
                     <!--template bindings={}--><div _ngcontent-yxb-13="" class="radio">
-                        <label _ngcontent-yxb-13="" for="duration1">
+                        <label _ngcontent-yxb-13="" for="duration1" class="block-label">
                         <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration1" class="ng-untouched ng-pristine ng-invalid">
                         under 6 months
                         </label>
                     </div><div _ngcontent-yxb-13="" class="radio">
-                        <label _ngcontent-yxb-13="" for="duration2">
+                        <label _ngcontent-yxb-13="" for="duration2" class="block-label">
                         <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration2" class="ng-untouched ng-pristine ng-invalid">
                         between 6 months and 1 year
                         </label>
                     </div><div _ngcontent-yxb-13="" class="radio">
-                        <label _ngcontent-yxb-13="" for="duration3">
+                        <label _ngcontent-yxb-13="" for="duration3" class="block-label">
                         <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration3" class="ng-untouched ng-pristine ng-invalid">
                         between 1 and 2 years
                         </label>
-                    </div><div _ngcontent-yxb-13="" class="radio">
-                        <label _ngcontent-yxb-13="" for="duration4">
+                    </div>
+                    <div _ngcontent-yxb-13="" class="radio">
+                        <label _ngcontent-yxb-13="" for="duration4" class="block-label">
                         <input _ngcontent-yxb-13="" name="projectDurationId" required="" type="radio" id="duration4" class="ng-untouched ng-pristine ng-invalid">
                         over 2 years
                         </label>
@@ -171,11 +173,11 @@
             </div>
         </div>
         <div _ngcontent-yxb-13="" class="form--actions row">
-            <div _ngcontent-yxb-13="" class="col-sm-5 text-center">
+            <div _ngcontent-yxb-13="" class="col-sm-5">
                 <label _ngcontent-yxb-13="" for="saveApplicationBack">Previous step: <span _ngcontent-yxb-13="">Business details</span></label>
-               <a href="Business-Details.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+               <a href="Business-Details.html" class="btn btn-default form-control pull-right" id="saveApplicationCont">Save and go back</a>
             </div>
-            <div _ngcontent-yxb-13="" class="col-sm-5 col-sm-offset-2 text-center">
+            <div _ngcontent-yxb-13="" class="col-sm-5 col-sm-offset-2">
                 <label _ngcontent-yxb-13="" for="saveApplicationCont">Next step: <span _ngcontent-yxb-13="">Project outputs</span></label>
                 <a href="Project-Outputs.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
             </div>

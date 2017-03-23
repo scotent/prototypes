@@ -4,7 +4,7 @@
 
 form {
   .well {
-    background-color: $se-light-grey;
+    background-color: white;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
@@ -27,66 +27,60 @@ form {
     border-radius: 0;
   }
   
-  div.radio {
-    label {
-      border: white 1px solid;
-      background: white;
-      padding: 1em;
-      font-size: 1em;
-      
-      &:hover {
-        border: $se-light-blue 1px solid;
-      }
-      
-      input[type="radio"] {
-        margin-left: 0;
-        margin-right: 0.5em;
-        position: relative;
-      }
+  label.block-label {
+    display: inline-block;
+    width: auto;
+    border: white 1px solid;
+    background: $se-light-grey;
+    padding: 1em;
+    font-size: 1em;
     
+    &:hover, &.checked {
+      border: $se-light-blue 1px solid;
     }
+    
+    input[type="radio"] {
+      margin-left: 0;
+      margin-right: 0.5em;
+      position: relative;
+    }
+  
   }
   
   .input-group {
-    .input-group-addon{
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-      border-color: $se-light-blue;
-      color: $se-light-blue;
-      font-weight: bold;
-      background: white;
+    &.icon-left {
+      input {
+        border-left: none;
+        box-shadow: none;
+      }      
+      .input-group-addon{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-color: $se-light-blue;
+        color: $se-light-blue;
+        font-weight: bold;
+        background: white;
+      }
     }
-    input {
-      border-left: none;
-      box-shadow: none;
+    &.icon-right {
+      input {
+        border-right: none;
+        box-shadow: none;
+      }      
+      .input-group-addon{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-color: $se-light-blue;
+        color: $se-light-blue;
+        font-weight: bold;
+        background: white;
+      }
     }
   }
   
   
   /* Action Buttons */
   .form--actions {
-    .text-center {
-      text-align: left !important;
-      padding: 0 !important;
-      
-      .btn-primary {
-        float: none !important;
-        padding: 1em 2em;
-        height: auto;
-      }
-      
-      &:first-of-type {
-        .btn-primary {
-          background: white;
-          border-color: $se-light-blue !important;
-          color: $se-light-blue !important;
-          &:hover {
-            background: $se-light-blue;
-            color: white !important;
-          }
-        }
-      }
-    }
     label {
         display: block;
       span {
