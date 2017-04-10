@@ -5,11 +5,7 @@ body {
 main {
   margin-bottom: 100px; }
 
-.page-header {
-  padding: 0 0 40px 0; }
-
 ol#progress--indicator {
-  margin: 1em 0;
   padding: 1em;
   font-size: 1.1em;
   background: white; }
@@ -17,7 +13,7 @@ ol#progress--indicator {
     list-style: none;
     margin-bottom: 0.5em;
     color: #666; }
-    ol#progress--indicator li span.light {
+    ol#progress--indicator li .light {
       height: 15px;
       width: 15px;
       background: #999999;
@@ -27,7 +23,7 @@ ol#progress--indicator {
       margin-left: 0.25em;
       position: relative;
       top: 7px; }
-      ol#progress--indicator li span.light::before {
+      ol#progress--indicator li .light::before {
         content: '';
         position: relative;
         display: inline-block;
@@ -42,13 +38,13 @@ ol#progress--indicator {
     ol#progress--indicator li.current--step {
       font-weight: bold;
       color: #000; }
-      ol#progress--indicator li.current--step span.light {
+      ol#progress--indicator li.current--step .light {
         background: #2980B9; }
     ol#progress--indicator li.complete {
       color: #666; }
-      ol#progress--indicator li.complete span.light {
-        background: #00cc00; }
-        ol#progress--indicator li.complete span.light::after {
+      ol#progress--indicator li.complete .light {
+        background: #128512; }
+        ol#progress--indicator li.complete .light::after {
           font-family: FontAwesome;
           content: "\f00c";
           font-size: 11px;
@@ -58,36 +54,22 @@ ol#progress--indicator {
           left: 2px; }
     ol#progress--indicator li.incomplete {
       color: #666; }
-      ol#progress--indicator li.incomplete span.light {
+      ol#progress--indicator li.incomplete .light {
         background: orange; }
 
-section.form-preview h3 {
-  margin: 0; }
-
+@media screen and (max-width: 640px) {
+  ol#progress--indicator {
+    text-align: center; }
+    ol#progress--indicator li {
+      display: inline-block;
+      margin-bottom: 0; }
+      ol#progress--indicator li span {
+        display: none; } }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   display: none;
   -webkit-appearance: none;
   margin: 0;
   /* <-- Apparently some margin are still there even though it's hidden */ }
-
-.page-header h1 {
-  margin: 0; }
-
-.form-preview header {
-  margin-bottom: 2em;
-  border-bottom: 1px solid;
-  padding-bottom: 0.5em; }
-
-.form-preview-row {
-  padding: 0 0 0.5em 0;
-  font-size: 18px; }
-  .form-preview-row h4 {
-    font-size: 0.75em;
-    color: #666;
-    margin: 5px 0; }
-
-#companyRegNo {
-  max-width: 120px; }
 
 /*# sourceMappingURL=se-grants.css.map */

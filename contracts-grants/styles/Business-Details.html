@@ -64,12 +64,12 @@
         <div class="col-sm-3">
             <grant-applicationstages applicationid="companyInfo.id"><ol id="progress--indicator">
     
-    <li class="current--step"><span class="light"></span>Business details</li>
-    <li><span class="light"></span>Project details</li>
-    <li><span class="light"></span>Project outputs</li>
-    <li><span class="light"></span>Project resources</li>
-    <li><span class="light"></span>Project costs</li>
-    <li><span class="light"></span>Preview</li>
+    <li class="current--step"><i class="light"></i><span>Business details</span></li>
+    <li><i class="light"></i><span>Project details</span></li>
+    <li><i class="light"></i><span>Project outputs</span></li>
+    <li><i class="light"></i><span>Project resources</span></li>
+    <li><i class="light"></i><span>Project costs</span></li>
+    <li><i class="light"></i><span>Preview</span></li>
 </ol>
 
 </grant-applicationstages>
@@ -77,9 +77,7 @@
         <div class="col-sm-9">
             <form novalidate="" class="ng-dirty ng-invalid ng-touched" _lpchecked="1">
                 <error-summary _nghost-jmv-9=""><!--template bindings={}--></error-summary>
-                <section class="well well-sm">
-                    <div class="form-group row">
-                        <div class="col-sm-12">
+                <div class="form-group">
                             <label for="companyName">Company name</label>
                             <div class="help-block" id="companyNameHelp">
                                 The name your company is registered as at Companies House.
@@ -88,123 +86,112 @@
                             <!--template bindings={}-->
                             
                         </div>
-                    </div>
-                </section>
-                <section class="well well-sm">
-                    <div class="form-group row">
-                        <div class="col-sm-12">
+                <div class="form-group">
                             <label for="companyRegNo">Companies House registration number</label>
                             <div class="help-block" id="companyRegNoHelp">
                                 You can find your unique registration number on the <a href="https://beta.companieshouse.gov.uk" onclick="window.open('https://beta.companieshouse.gov.uk', 'newwindow', 'width=500, height=500'); return false;">Companies House website</a>. 
                             </div>
                             <input aria-describedby="companyRegNoHelp" class="form-control ng-valid ng-untouched ng-pristine" id="companyRegNo" maxlength="8" name="companyRegNo" placeholder="eg. SC123456" type="text">
                         </div>
-                    </div>
-                </section>
-                <section class="well well-sm">
-                    <div class="form-group row">
-                        <div class="col-sm-12">
-                            <label>Is the company an SME or a large enterprise?</label><br>
+                <div class="form-group">
+                            <label>Is the company an SME or a large enterprise?</label>
                             <div class="help-block" id="companyTypeOptionsHelp">
                                 You're an SME if you have fewer than 250 employees with an annual turnover of less than EURO 50m and are independent. You're independent as long as no large enterprise(s) own more than 25% of your capital or voting rights.
                             </div>
-                               <label for="companyTypeSME" class="block-label">
-                                <input id="companyTypeSME" name="companyTypeOptions" ng-control="options" required="" type="radio" value="SME" class="ng-valid ng-untouched ng-pristine"> SME
-                               </label><br>
-                            <label for="companyTypeEnterprise" class="block-label">
-                                <input id="companyTypeEnterprise" name="companyTypeOptions" ng-control="options" required="" type="radio" value="Large Enterprise" class="ng-valid ng-untouched ng-pristine"> Enterprise
-                            </label>
+                               <span class="radio-container">
+                                <input id="companyTypeSME" name="companyTypeOptions" ng-control="options" required="" type="radio" value="SME" class="ng-valid ng-untouched ng-pristine"> 
+                               <label for="companyTypeSME" class="block-label">SME</label>
+                               </span>
+                               <br>
+                               <span class="radio-container">
+                                <input id="companyTypeEnterprise" name="companyTypeOptions" ng-control="options" required="" type="radio" value="Large Enterprise" class="ng-valid ng-untouched ng-pristine"> 
+                            <label for="companyTypeEnterprise" class="block-label">Enterprise</label>
+                               </span>
                             <!--template bindings={}-->
                         </div>
-                    </div>
-                </section>
-                <section class="well well-sm">
-                    <div class="form-group row">
-                        <div class="col-sm-12">
+                        <div class="form-group">
                             <label for="minimisSupport">Have you received de minimis support from a UK organisation in this or the previous two financial years?</label>
                             <div class="help-block" id="minimisSupportOptionsHelp">
                                 De minimis aid is a type of public sector funding. You're notified in writing if awarded this type of aid. You need to tell us about de minimis aid as there's a limit to the funding you can get over a 3 year period.
                             </div>
-                            <input id="minimisSupportNo" name="minimisSupportOptions" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> no
+                            <label for="minimisSupportNo" class="block-label">
+                            <input id="minimisSupportNo" name="minimisSupportOptions" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> no </label>
                             <br>
-                            <input id="minimisSupportYes" name="minimisSupportOptions" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> yes
+                            <label for="minimisSupportYes" class="block-label">
+                            <input id="minimisSupportYes" name="minimisSupportOptions" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> yes</label>
                             <!--template bindings={}-->
-                        </div>
                         <!--template bindings={}-->
-                        <!--template bindings={}--><div class="col-sm-12">
-                            <div class="help-block" id="minimisFundingHelp">
-                                <strong> De minimis funding is calculated in EURO. You'll need to convert any funding you've received in GBP using the <a href="http://ec.europa.eu/budget/contracts_grants/info_contracts/inforeuro/index_en.cfm" onclick="window.open('http://ec.europa.eu/budget/contracts_grants/info_contracts/inforeuro/index_en.cfm', 'newwindow', 'width=500, height=500'); return false;">European Currency Conversion Tool</a>.</strong>
+                        <!--template bindings={}-->
+                        <div class="form-sub-group">
+                            <div id="minimisFundingHelp">
+                                <label> De minimis funding is calculated in EURO. You'll need to convert any funding you've received in GBP using the <a href="http://ec.europa.eu/budget/contracts_grants/info_contracts/inforeuro/index_en.cfm" onclick="window.open('http://ec.europa.eu/budget/contracts_grants/info_contracts/inforeuro/index_en.cfm', 'newwindow', 'width=500, height=500'); return false;">European Currency Conversion Tool</a>.</label>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <table class="table table-bordered table-striped">
-                                        <tbody><tr>
-                                            <th>Type of de minimis</th>
-                                            <th>Financial year</th>
-                                            <th>Amount (EURO)</th>
-                                            <th></th>
-                                        </tr>
-                                        <!--template bindings={}--><tr>
-                                            <td>
-                                                <select class="form-control ng-untouched ng-pristine ng-invalid" required="" id="deMinimisType0">
-                                                    <option value="">Select type</option>
-                                                    <!--template bindings={}--><option value="General de minimis">General de minimis</option><option value="Agriculture de minimis">Agriculture de minimis</option><option value="Fisheries de minimis">Fisheries de minimis</option><option value="Road transport de minimis">Road transport de minimis</option>
-                                                </select>
-                                                <!--template bindings={}--><div class="alert alert-danger">Please select a type</div>
-                                            </td>
-                                            <td>
-                                                <select class="form-control ng-untouched ng-pristine ng-invalid" required="">
-                                                    <option value="">Select year</option>
-                                                    <!--template bindings={}--><option value="2016/2017">2016/2017</option><option value="2015/2016">2015/2016</option><option value="2014/2015">2014/2015</option>
-                                                </select>
-                                                <!--template bindings={}--><div class="alert alert-danger">Please select a year</div>
-                                            </td>
-                                            <td>
-                                                <input class="form-control ng-untouched ng-pristine ng-invalid" maxlength="15" required="" type="text" validaterange="" id="amount_0">
-                                                <!--template bindings={}--><div class="alert alert-danger" id="amountError0">Please enter a valid amount between 0 to 999999999999999  </div>
-                                            </td>
-                                            <td>
-                                                <!--template bindings={}--><input class="btn btn-danger btn-sm pull-right" type="button" value="Delete row" id="remove_0">
-                                            </td>
-                                        </tr><tr>
-                                            <td>
-                                                <select class="form-control ng-untouched ng-pristine ng-invalid" required="" id="deMinimisType2">
-                                                    <option value="">Select type</option>
-                                                    <!--template bindings={}--><option value="General de minimis">General de minimis</option><option value="Agriculture de minimis">Agriculture de minimis</option><option value="Fisheries de minimis">Fisheries de minimis</option><option value="Road transport de minimis">Road transport de minimis</option>
-                                                </select>
-                                                <!--template bindings={}--><div class="alert alert-danger">Please select a type</div>
-                                            </td>
-                                            <td>
-                                                <select class="form-control ng-untouched ng-pristine ng-invalid" required="">
-                                                    <option value="">Select year</option>
-                                                    <!--template bindings={}--><option value="2016/2017">2016/2017</option><option value="2015/2016">2015/2016</option><option value="2014/2015">2014/2015</option>
-                                                </select>
-                                                <!--template bindings={}--><div class="alert alert-danger">Please select a year</div>
-                                            </td>
-                                            <td>
-                                                <input class="form-control ng-untouched ng-pristine ng-invalid" maxlength="15" required="" type="text" validaterange="" id="amount_2">
-                                                <!--template bindings={}--><div class="alert alert-danger" id="amountError1">Please enter a valid amount between 0 to 999999999999999  </div>
-                                            </td>
-                                            <td>
-                                                <!--template bindings={}--><input class="btn btn-danger btn-sm pull-right" type="button" value="Delete row" id="remove_2">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="4">
-                                                <input class="btn btn-primary pull-right" type="button" value="Add more rows" id="undefined">
-                                            </td>
-                                        </tr>
-                                    </tbody></table> 
-                                </div>
+                                <table class="table table-bordered table-striped" style="margin-top: 2em;">
+                                    <tbody><tr>
+                                        <th>Type of de minimis</th>
+                                        <th>Financial year</th>
+                                        <th>Amount (EURO)</th>
+                                        <th></th>
+                                    </tr>
+                                    <!--template bindings={}--><tr>
+                                        <td>
+                                            <select class="form-control ng-untouched ng-pristine ng-invalid" required="" id="deMinimisType0">
+                                                <option value="">Select type</option>
+                                                <!--template bindings={}--><option value="General de minimis">General de minimis</option><option value="Agriculture de minimis">Agriculture de minimis</option><option value="Fisheries de minimis">Fisheries de minimis</option><option value="Road transport de minimis">Road transport de minimis</option>
+                                            </select>
+                                            <!--template bindings={}--><div class="alert alert-danger">Please select a type</div>
+                                        </td>
+                                        <td>
+                                            <select class="form-control ng-untouched ng-pristine ng-invalid" required="">
+                                                <option value="">Select year</option>
+                                                <!--template bindings={}--><option value="2016/2017">2016/2017</option><option value="2015/2016">2015/2016</option><option value="2014/2015">2014/2015</option>
+                                            </select>
+                                            <!--template bindings={}--><div class="alert alert-danger">Please select a year</div>
+                                        </td>
+                                        <td>
+                                            <input class="form-control ng-untouched ng-pristine ng-invalid" maxlength="15" required="" type="text" validaterange="" id="amount_0">
+                                            <!--template bindings={}--><div class="alert alert-danger" id="amountError0">Please enter a valid amount between 0 to 999999999999999  </div>
+                                        </td>
+                                        <td>
+                                            <!--template bindings={}--><input class="btn btn-danger pull-right" type="button" value="Delete row" id="remove_0">
+                                        </td>
+                                    </tr><tr>
+                                        <td>
+                                            <select class="form-control ng-untouched ng-pristine ng-invalid" required="" id="deMinimisType2">
+                                                <option value="">Select type</option>
+                                                <!--template bindings={}--><option value="General de minimis">General de minimis</option><option value="Agriculture de minimis">Agriculture de minimis</option><option value="Fisheries de minimis">Fisheries de minimis</option><option value="Road transport de minimis">Road transport de minimis</option>
+                                            </select>
+                                            <!--template bindings={}--><div class="alert alert-danger">Please select a type</div>
+                                        </td>
+                                        <td>
+                                            <select class="form-control ng-untouched ng-pristine ng-invalid" required="">
+                                                <option value="">Select year</option>
+                                                <!--template bindings={}--><option value="2016/2017">2016/2017</option><option value="2015/2016">2015/2016</option><option value="2014/2015">2014/2015</option>
+                                            </select>
+                                            <!--template bindings={}--><div class="alert alert-danger">Please select a year</div>
+                                        </td>
+                                        <td>
+                                            <input class="form-control ng-untouched ng-pristine ng-invalid" maxlength="15" required="" type="text" validaterange="" id="amount_2">
+                                            <!--template bindings={}--><div class="alert alert-danger" id="amountError1">Please enter a valid amount between 0 to 999999999999999  </div>
+                                        </td>
+                                        <td>
+                                            <!--template bindings={}--><input class="btn btn-danger pull-right" type="button" value="Delete row" id="remove_2">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                        <td colspan="1">
+                                            <input class="btn btn-default pull-right" type="button" value="Add more rows" id="undefined">
+                                        </td>
+                                    </tr>
+                                </tbody></table> 
                             </div>
                         </div>
-                    </div>
-                </section>
                     <div class="form--actions">
                         <div class="form--actions">
                             <div class="col-sm-4 col-sm-offset-8">
                                 <label for="saveApplicationCont">Next step: <span>Project details</span></label>
-                                <a href="Project-Details.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
+                                <a href="Project-Details.html" class="btn btn-primary btn-lg" id="saveApplicationCont">Save and continue</a>
                             </div>
                         </div>
                     </div>

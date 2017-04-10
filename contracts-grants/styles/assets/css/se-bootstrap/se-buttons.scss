@@ -5,22 +5,25 @@
 .btn {
   border-radius: 0;
   font-weight: bold;
+  &:focus {
+    outline: 4px solid $highlight-blue;
+  }
 }
 
 .btn-default {
-  background: $se-light-blue;
+  background: $se-blue;
   color: white;
   border: none;
-  &:hover {
-  color: white;
+  &:hover, &:active, &:focus {
+    color: white;
     background: darken($se-light-blue, 10%);
   }
 }
 
 .btn-primary {
-  background: $se-blue;
-  &:hover {
-    background: darken($se-blue, 10%);
+  background: $accessible-green;
+  &:hover, &:active, &:focus {
+    background: darken($accessible-green, 10%);
   }
 }
 

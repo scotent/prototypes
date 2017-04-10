@@ -20,10 +20,8 @@
 
   <body>
 
-    <app><div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <nav-menu><div class="main-nav">
+    <app>
+    <nav-menu><div class="main-nav">
         
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -49,17 +47,21 @@
         </div>
         <div class="row">
             <div class="col-sm-12 body-content">
-                <router-outlet></router-outlet><application><main class="container" id="content">
-        <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+                <router-outlet></router-outlet><application>
+        <grant-breadcrumb stage="Domestic Market Development Support">
+        <header class="page-header row" id="breadcrumb">
+              <div class="container">
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li>Support &amp; Funding</li>
                 <li class="active">Domestic Market Development Support</li>
             </ol>
             <h1 class="page--title">Application Form: <span>Project Resources</span></h1>
+              </div>
         </header>
     
     </grant-breadcrumb>
+    <main class="container" id="content">
         <div class="row" id="page--content">
             <div class="col-sm-3">
                 <grant-applicationstages><ol id="progress--indicator">
@@ -76,51 +78,39 @@
             </div>
             <router-outlet></router-outlet><external-consultants><div class="col-sm-9">
         <form novalidate="" class="ng-dirty ng-invalid ng-touched">
-            <div class="form-group row">
-                <div class="col-sm-6">
                     <error-summary _nghost-yxb-9=""><!--template bindings={}--></error-summary>
-                </div>
-            </div>
-            <section class="well well-sm">
-                <div class="form-group row">
-                    <div class="col-sm-10">
+                <div class="form-group">
                         <fieldset>
                             <legend>Are you hiring a temporary staff member or an external consultant?</legend>
                             <p class="help-block">A temporary staff member is someone on your payroll who you pay a salary. An external consultant is someone outside your company who'll normally invoice you for specific work.</p>
-                            <label class="radio-inline">
+                            <label class="block-label">
                                 <input id="usingExternalConsultantsNo" name="usingExternalConsultants" ng-control="options" required="" type="radio" class="ng-valid ng-untouched ng-pristine"> temporary staff member 
                             </label>
                             <br>
-                            <label class="radio-inline">
+                            <label class="block-label">
                                 <input id="usingExternalConsultantsYes" name="usingExternalConsultants" ng-control="options" required="" type="radio" class="ng-valid ng-untouched ng-pristine"> external consultant 
                             </label>
                             <!--template bindings={}-->
                         </fieldset>
                     </div>
     
-                </div>
-            </section>
-    
-            <!--template bindings={}--><section class="well well-sm">
-                <div class="form-group row">
+                <div class="form-group">
                     <fieldset>
-                        <div class="col-sm-12">
     
                             <legend>Did you get competitive quotes for this work?</legend>
                             <p class="help-block">
                                 A quote from more than one consultant will help you decide if you're getting the best fee and service for the project.
                             </p>
-                            <label class="radio-inline">
+                            <label class="block-label">
                                 <input id="quoteObtainedNo" name="quoteObtained" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> no
                             </label>
                             <br>
-                            <label class="radio-inline">
+                            <label class="block-label">
                                 <input id="quoteObtainedYes" name="quoteObtained" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> yes
                             </label>
                             <br>
                             <br>
                             <!--template bindings={}-->
-                        </div>
                         <div class="col-sm-6">
                             <!--template bindings={}--><div>
                                 <multi-file-upload name="fileUploads" noattachmentvalidator="" _nghost-yxb-14="" class="ng-untouched ng-pristine ng-invalid"><!--template bindings={}-->
@@ -137,44 +127,37 @@
                         </div>
                     </fieldset>
                 </div>
-            </section>
     
-            <!--template bindings={}--><section class="well well-sm">
-                <div class="form-group row">
-                    <div class="col-sm-11">
+                <div class="form-group">
                         <fieldset>
                             <legend>Do any third parties have a declared interest in the project?</legend>
                             <p class="help-block">Tell us if anyone involved in the project will gain a personal benefit which could mean a conflict
                                 of interest.</p>
-                            <label class="radio-inline">
+                            <label class="block-label">
                                 <input id="declaredInterestNo" name="declaredInterest" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> no
                             </label>
                             <br>
-                            <label class="radio-inline">
+                            <label class="block-label">
                                 <input change="formRef.resetForm(formRef.value)" id="declaredInterestYes" name="declaredInterest" ng-control="options" required="" type="radio" class="ng-dirty ng-valid ng-touched"> yes
                             </label>
                             <!--template bindings={}-->
                             <!--template bindings={}--><div class="form-sub-group">
-                                <br>
                                 <label for="declaredInterestDescription">Please give us details about this conflict of interest</label>
                                 <p class="help-block">500 characters is around 100 words.</p><span class="pull-right">0/500</span>
                                 <textarea class="form-control ng-untouched ng-pristine ng-invalid" id="declaredInterestDescription" maxlength="500" name="declaredInterestDescription" required="" rows="3"></textarea>
                                 <!--template bindings={}-->
                             </div>
                         </fieldset>
-                    </div>
                 </div>
-    
-            </section>
-    
+        
             <div class="form--actions">
-                <div class="col-sm-5 text-center">
+                <div class="col-sm-5">
                     <label for="saveApplicationBack">Previous step: <span>Project outputs</span></label>
-                    <a href="Project-Outputs.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and go back</a>
+                    <a href="Project-Outputs.html" class="btn btn-default btn-lg" id="saveApplicationCont">Save and go back</a>
                 </div>
-                <div class="col-sm-5 col-sm-offset-2 text-center">
+                <div class="col-sm-5 col-sm-offset-2">
                     <label for="saveApplicationCont">Next step: <span>Project costs</span></label>
-                    <a href="Project-Costs.html" class="btn btn-primary form-control pull-right" id="saveApplicationCont">Save and continue</a>
+                    <a href="Project-Costs.html" class="btn btn-primary btn-lg" id="saveApplicationCont">Save and continue</a>
                 </div>
             </div>
         </form>
@@ -182,9 +165,6 @@
         </div>
     </main>
     </application>
-            </div>
-        </div>
-    </div>
     </app>
         <!-- Bootstrap core JavaScript
     ================================================== -->

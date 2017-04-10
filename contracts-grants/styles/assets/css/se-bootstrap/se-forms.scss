@@ -3,13 +3,27 @@
 /* SE Form Styles */
 
 form {
-  .well {
+  
+  .form-group {
     background-color: white;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
     border: none;
     padding: 2em;
+    
+    .form-sub-group {
+      padding-left: 1em;
+      border-left: 5px solid #337ab7;
+      margin: 2em 0 0 4px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 640px) {
+    .form-group {
+      padding: 1em;
+    }
   }
   
   .form-group label,
@@ -17,6 +31,8 @@ form {
     font-size: 1.25em;
     font-weight: bold;
     border-bottom: none;
+    display: block;
+    margin-bottom: 0;
   }
 
   /* Input Fields */
@@ -44,8 +60,10 @@ form {
       margin-right: 0.5em;
       position: relative;
     }
-  
   }
+  
+  input[type="radio"]:checked+label{ font-weight: bold; color: red; border: $se-light-blue 1px solid;} 
+
   
   .input-group {
     &.icon-left {
@@ -91,4 +109,33 @@ form {
     }
   }
   
+}
+
+.form-preview {
+  header {
+    margin-bottom: 2em;
+    border-bottom: 1px solid;
+    padding-bottom: 0.5em;
+  }
+}
+
+.form-preview-row {
+  padding: 0 0 0.5em 0;
+  font-size: 18px;
+  
+  h4 {
+  font-size: 0.75em;
+  color: #666;
+  margin: 5px 0;
+  }  
+}
+
+
+#companyRegNo {
+  max-width: 120px;
+}
+
+
+section.form-preview h3 {
+  margin: 0;
 }

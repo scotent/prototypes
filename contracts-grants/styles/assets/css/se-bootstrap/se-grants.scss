@@ -9,13 +9,8 @@ main {
   margin-bottom: 100px;
 }
 
-.page-header {
-  padding: 0 0 40px 0;
-}
-
 
 ol#progress--indicator {
-  margin: 1em 0;
   padding: 1em;
   font-size: 1.1em; 
   background: white;
@@ -24,7 +19,7 @@ ol#progress--indicator {
     list-style: none;
     margin-bottom: 0.5em;
     color: #666;
-    span.light {
+    .light {
      height: 15px;
      width: 15px;
      background: $se-mid-grey;
@@ -52,14 +47,14 @@ ol#progress--indicator {
     &.current--step {
       font-weight: bold;
       color: #000;
-      span.light {
+      .light {
         background: $se-light-blue;
       }
     }
     &.complete {
       color: #666;
-      span.light {
-        background: $se-bright-green;
+      .light {
+        background: $accessible-green;
         &::after {
           font-family: FontAwesome;
           content: "\f00c";
@@ -73,51 +68,32 @@ ol#progress--indicator {
     }
     &.incomplete {
       color: #666;
-      span.light {
+      .light {
         background: orange;
       }
     }
   }  
 }
 
-section.form-preview h3 {
-  margin: 0;
+@media screen and (max-width: 640px) {
+  ol#progress--indicator {
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-bottom: 0;
+      span {
+        display: none;
+        }
+    }
+  }
 }
+
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     display: none;
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
-}
-
-.page-header h1 {
-  margin: 0;
-}
-
-
-.form-preview {
-  header {
-    margin-bottom: 2em;
-    border-bottom: 1px solid;
-    padding-bottom: 0.5em;
-  }
-}
-
-.form-preview-row {
-  padding: 0 0 0.5em 0;
-  font-size: 18px;
-  
-  h4 {
-  font-size: 0.75em;
-  color: #666;
-  margin: 5px 0;
-  }  
-}
-
-
-#companyRegNo {
-  max-width: 120px;
 }
 
 

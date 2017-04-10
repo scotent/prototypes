@@ -20,10 +20,8 @@
 
   <body>
 
-    <app><div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <nav-menu><div class="main-nav">
+    <app>
+      <nav-menu><div class="main-nav">
         
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -49,18 +47,23 @@
         </div>
         <div class="row">
             <div class="col-sm-12 body-content">
-                <router-outlet></router-outlet><application><main class="container" id="content">
-        <grant-breadcrumb stage="Domestic Market Development Support">    <header class="page-header row" id="breadcrumb">
+                <router-outlet></router-outlet><application>
+        <grant-breadcrumb stage="Domestic Market Development Support">
+        <header class="page-header row" id="breadcrumb">
+          <div class="container">
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li>Support &amp; Funding</li>
                 <li class="active">Domestic Market Development Support</li>
             </ol>
             <h1 class="page--title">Application Form: <span>Preview your submission</span></h1>
+          </div>
         </header>
     
     </grant-breadcrumb>
-        <div class="row" id="page--content">
+<main class="container" id="content">
+  
+          <div class="row" id="page--content">
             <div class="col-sm-3">
                 <grant-applicationstages><ol id="progress--indicator">
         
@@ -288,7 +291,7 @@
             </section> 
         
         <div _ngcontent-nta-16="" class="form--actions clearfix">
-            <div _ngcontent-nta-16="" class="col-sm-4 col-sm-offset-8 text-center pull-right">
+            <div _ngcontent-nta-16="" class="col-sm-4 col-sm-offset-8">
                 <label _ngcontent-nta-16="" for="saveApplicationCont">Next step: <span _ngcontent-nta-16="">Declaration and send</span></label>
                 <input _ngcontent-nta-16="" class="btn btn-primary form-control" id="saveApplicationCont" type="submit" value="Continue">
             </div>
@@ -298,9 +301,7 @@
         </div>
     </main>
     </application>
-            </div>
-        </div>
-    </div>
+
     </app>
     
         <!-- Bootstrap core JavaScript

@@ -6,4 +6,8 @@
     .navbar .navbar-brand img {
       max-height: 30px; }
 
+@media screen and (max-width: 640px) {
+  .navbar-brand img {
+    margin-left: 1em; } }
+
 /*# sourceMappingURL=se-navbar.css.map */
